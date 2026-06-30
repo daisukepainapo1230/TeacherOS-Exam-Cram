@@ -1,0 +1,3216 @@
+<!doctype html>
+<html lang="ja">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=5, viewport-fit=cover, interactive-widget=resizes-content">
+  <meta name="theme-color" content="#176b87" media="(prefers-color-scheme: light)">
+  <meta name="theme-color" content="#10242d" media="(prefers-color-scheme: dark)">
+  <meta name="color-scheme" content="light dark">
+  <meta name="mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+  <meta name="apple-mobile-web-app-title" content="Exam Cram">
+  <meta name="format-detection" content="telephone=no">
+  <meta name="description" content="東京都の小学校教員採用試験に向けた、小学校全科と論文の直前対策アプリ">
+  <link rel="manifest" href="./manifest.json">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Cdefs%3E%3ClinearGradient id='g' x2='1' y2='1'%3E%3Cstop stop-color='%232384a5'/%3E%3Cstop offset='1' stop-color='%232f856f'/%3E%3C/linearGradient%3E%3C/defs%3E%3Crect width='64' height='64' rx='16' fill='url(%23g)'/%3E%3Ctext x='32' y='43' text-anchor='middle' font-family='Arial,sans-serif' font-size='34' font-weight='700' fill='white'%3ET%3C/text%3E%3C/svg%3E">
+  <link rel="apple-touch-icon" sizes="180x180" href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAALQAAAC0CAMAAAAKE/YAAAADAFBMVEVMaXEohoQthXIohIoshnMkhpMqgosohIophIsjhKAohIsskIUphYcohIsohIophIYohIwkg6AthHMng40thXMthHMthXIjg6Ejg6EjhKEog4slg5wjg6IjhKAthXInhIwjg6AjhKEphIcthXMnhI8sh4cqiHEog4kohIonhI4phIUnhIwthXMohYkkg6EthXEkgqAthHAohIopg4sphYgthXQnhI8phIQjhKAjhJ8phYUohZMuhHQkhJ8jhKAjhKAjg6AphIouhXMnhI0thXMthXMphIQqhYUuhXEthHIkhKAng4wthXMphYUphIYrhX3///8phYkqhYYqhYQqhYcohI4phIsohI0ohJAqhYUrhYEnhJMohI8rhYAnhJQrhYIphYgnhJIshX0mhJcmhJYshX4rhYMphIwnhJEmhJkshXsphYoshXwmhJgnhJUrhX8thXglhJwphIolhJsthXklhJ0thXcthXolhJokhJ8uhXUqhYMohJElhJ4thXYkhKAuhXQshXomhJoqhYgohIwkhKEuhXMshX8mhJXh7vBMmJMkhJ4uhXZJl6VKl6FJl6NLmJymzNDD3d/D3d1MmJZIl6amzM5KmJI2jZ1Kl59FlI9Jl6Zmp6xMmJRMmJVBk6BElJQ0i4Vmp7AthoFLmJcphZZCk6JHl6VLmJlLmJoyiYRLl50zi5BHlpsziolFlJE/kp8/kIw5jYhXn6RLmJgwiZQshocviZhGlp86j51FlaI/kqJElaRCk50sh5Uxipg3jZA+kZZBk5o6j5lJl5gqhZEyipRCk5IxiYs2jJM6jpU6j5JJlpE2i4cxiI9FlqU5j58showwipqmzM0shoVCko07jokth5g8j4othoM6j5s7j443jZcvh4RIlpQxiYYqhY5GlZhlp7A5jo8qhZM1i4w5jYwvh4E9j4k0jJsohZRKl5Q9kJEuh5E1jJdJl6A/kI8qhpgwipsphI9DlJ3C3N8wiIg/kZtKl6IphI0xiIInhJYohZfT5uhQm6C/2t7KZ5q3AAAAUHRSTlMAIP0+MAkP5jD6zgexNn37/bWOtviz5pPm0FEhLj/NkDV99zz5BR4sot/Qanvw7/BUT+2TiOzu3d/u7BzdaI/ZwtnXwb5ljGWZqaKIgL++0+HomhQAAAAJcEhZcwAACxMAAAsTAQCanBgAAAwiSURBVHja1d2JW1TXFQDwawAR3Le4x303abMvzdps3b+CBAMtFdMmaTUtqU2TalOlMWg7LTD9yhRmpgNDWYcBBMq+75soYFGMLEJFLRFEkzQh6XrfmyFh3hvnnvPmGd87f8Hve9999953zrnvEuIqvFY88ujcJQ886LOPi9/9iouf2+KntvgZH7/g4q23fmSLH/PxfVv8wBa/+QkX37PFd2yxi48fcvHmm8/zse6+zb7z5W4+PsQIr+nm+0WZp1iBYZ5hTldl3UZTuAmnf5FoFes3iBiLXHR2cXc69yXIAktB01PFapB5rcKtWts+dYKIbXlqeDmCEVK1xDOJ1CNnULGUorYBlfEhFo0sH3WgG8O6P7HXUoykS58htvLCkDWmM96sDHGSGb17v0xHyKbJPlxjfvdyMzjbiD0M8px8VGbdC33S4vd1zC1ZTXWNde/F2SLOv5dXyGGOhl6f1CFl0BkPRPGONsr1iLZEmWyvRb+OuTz/e3azBrmOn+kCGJqxLzS1EcbYbYfyBbIHNzq1qM8s9MTiO4OK2tPWb2pxJTzfom/GhKBXvPteomg0aLsK8xe6U/Hk2m2nST1IFBYLifj7fdb7fZGFVOt5tmbuLpk4K90aDrVq/qU1um2qB7vIhKGrYr2qpmqMM01GwSQ6hdfZX/0XPPwVr94bjiwJ7bOFn5ju38x2su0Oo1C3VB/L16eGvQlwPmr7ktt91dXi+b43YWrCeKTqFF6IO69qnJ0zElnL3xgm6W6FLY9jcqbeW6Wy+Q2Gm6Nm5/44/Yb5xGsvmjaY2h1moXabprGmoYbofq2tGvPi9sdr1PLNtUq5FBdvMyYTK17Sq6/+Ttfs22Geqc4XTA2qb+xPUx/BOWWOgLIzVCf01gNcmf8mY7vzZzYLEaPVOZ7zcE7hcMoxlB5QMXydRNkzlii9cNuzBNo2L6uQ1cuZAzLl1nZXR6jFGOZgl9mK6NDFtjxkLFDhxve92CrhgLXd3G7D1uiwnF8jou5muKD/cAiu9u/O9NfyKxiT73EilnozgkYYuanTb3cxiwSDe4tVdDMbglD7DQHqIiYQ0LMKMgMm3Ub6/SLS1FQev6msseacr5scdUMFo90gxSG0Vly/UtQTXxFd4bLhzoPgglT4zdFNJS3eE1VrzF1zCIdfRWR7ZhvK0c0Jl9Xn34hwEzRgLpVSWRZ7nvQGRqWkxnJ7wGYwzik1pYQWYT5hnWCBuaRspPNAHNFA+qD/NwB/+4Wo6G5r67k5C62OYwA6rBVkWWoXIEIDc/XmZOz2eYjBFA7LomMQ+U3hGhEjrEnuYdtfpEA6t2pkUWonIwAjcmL0kHNNtvQjBp9WuS7qDySIxqVy+1KjmGbeTTD3B1Zist9/UmAxuRy+2P6mGYOzerfqIrOwQXrBGhU/rkpJptppmhmb8pwdMkuh+jIxuXMv0acZJpfJOw+mbLoYVxe1AG9R1zO/GHMVabZjnZZ25MTXYTL5QrRmJx5dk0T03wCYfcjJVA0Kv8sQKPy/OdijjLNPNrRQ5UaXYnLmTujcbUJO9qlmUOz+r5Ko4dweX5naGj+uS+mn2mmaGavmh0Nr004QYNz5u/EXGaaXyDs/rror2T9RYzG5Plj4pnmCbSrnkAejakBidCY2kRPNNsR7vsY+SGB6puJUQjzHR4ME2v0LYvZcUjau1CdCoGlBffBvTzKMZ/aIJ0Ja4+6IhGmXdmxF9lGjm0awe14TxAlxNU4yG11My4g1MM0Uz+3JzODSADitCI2pAxzk0w/wKYfceUjSu1iZAo2pAffFtTDOPZvSLJkBb4u6LhmiUeW9G9FGmmUezeuPHoxpQff5iNNYccsZ0hm3eTQDnFwqrKlC98SI00BxyxnSGbdxNAOfKGqMqUP38Cw80hZozHQGbOSSoXkNjoLr5V4DqjZWgBUhXfQEaaA41i/FGmGdYI25oGyk/0AA0UzygP8zDHfzhejkaWr5+i9WaqdzkMAMqwVZF+lXCuCYqKL+faELRd1q1ghv1lHS0+PE6xE0UD6mPloR1os56OEEja8jldoiO7IxJW+23jKL5jIHe92WfShAk02O9ds3qvmEGqM1XV7zokaThzNzaFztYlWrPSGnOSPV9iIizBSNPbtUo826Jas5F+t+neDPW1F1poxj4xTabEMjT4jVaG1HxGR5B3OPoM08Gv3PkGNa/jieDHMdfjzTOEAk/ZuFHmyr6XR7HTyFnzd4M0VL+jdLZpZ2sNnN/UabJjZRkvkAkfg/mU6zxVLt3r5OY7gkzUzREv+Bc+iYxTLYLNWcYbC/glLMB4j0//ZkDlosI4VSzEm5Gk0bZi/qaP49ceNfQ4Uj6Zb6arQ5JC+WzhpHpJv3E7f+j9RMR3b9+UKMOSmvjY5m+PegE7MN7cb/kS6Y09M5NjTHeJo+ZQM4V+DczKPd+6dTM2WnN13oApgT6cxMyUfcNHNot/9D1dyUn59fP5Ld5bIGlJgba6I7DWCO0ZV5P1knx7+zCs+b8/OTk809FO6sDpt4xqAxmUyGvKQwGcwLyH0y/Tvrwx5zMhf9TVcvZp871/cO7Ufqy8g4npdr6Kdek8ZwBlRPYZv330s2y2PmxnNXdo85ZnLE24IDJ0LqgzDz/oeJr2xm23juy754teno0f7L8fGX244aDLl5iYC+Aow5/DYyX14zuzfebXP4QrJSdebweWSr6szhTxMP1ZnD1xKvdWozL6AXpTypMnP4U/RfvbNUZg7fRtEzVWY+7Mn9gPoJdZm/zP/pe5aqzIe38egpc9RkvmWD7ff1M1RkPvxV+z0B095Wj9n2GnIxXz3mhZ/efTFtjlrMt3h+ds3I3SoxH543+RIab3WYb3W4DG+pKsyH73S8pOhuNZjnCa+w8lW++bb1wou3pngr3XzrBvEVZxvvUrb5C57OLpPzWKNk84K1zq/tm3mXgp/z2utdkLjRW7Hj2fP6V1FO8VXovLHB1aWf6+8JVaD5K+sZ96su9Vbc2n0n+yJbr3tmK2pfN28q6M7gaTP8lbN/9gTfzrxx02xFfA8iyPzV3Vu33PRcwTem4K8cnznrm2tuWr7uqW2eUi939/J49pkZW+5/aPbnZV5w78O3LZz39FrX19H/H8c1p/xOx+qwAAAAAElFTkSuQmCC">
+  <title>TeacherOS Exam Cram</title>
+  <style>
+    :root {
+      --navy: #17324d;
+      --blue: #176b87;
+      --blue-2: #2384a5;
+      --blue-soft: #eaf6fa;
+      --green: #2f856f;
+      --green-soft: #eaf7f1;
+      --orange: #ec7b35;
+      --orange-dark: #ce5e1c;
+      --orange-soft: #fff2e8;
+      --red: #c44f54;
+      --red-soft: #fff0f0;
+      --ink: #1d2b36;
+      --muted: #687783;
+      --line: #dce5e9;
+      --paper: #ffffff;
+      --canvas: #f3f7f8;
+      --shadow: 0 12px 35px rgba(27, 62, 78, .08);
+      --radius: 20px;
+      --radius-sm: 13px;
+      --safe-top: env(safe-area-inset-top, 0px);
+      --safe-bottom: env(safe-area-inset-bottom, 0px);
+      --safe-left: env(safe-area-inset-left, 0px);
+      --safe-right: env(safe-area-inset-right, 0px);
+      --mobile-nav-height: 72px;
+    }
+
+    * { box-sizing: border-box; }
+
+    html {
+      min-height: 100%;
+      background: var(--canvas);
+      color: var(--ink);
+      font-family: -apple-system, BlinkMacSystemFont, "Hiragino Sans", "Yu Gothic UI", "Yu Gothic", Meiryo, sans-serif;
+      -webkit-text-size-adjust: 100%;
+      text-size-adjust: 100%;
+      scroll-padding-bottom: calc(var(--mobile-nav-height) + var(--safe-bottom) + 18px);
+      color-scheme: light;
+    }
+
+    body {
+      min-height: 100vh;
+      min-height: 100dvh;
+      margin: 0;
+      padding-bottom: calc(var(--mobile-nav-height) + var(--safe-bottom));
+      background:
+        radial-gradient(circle at 10% -10%, rgba(35, 132, 165, .09), transparent 30rem),
+        linear-gradient(180deg, #f8fbfc 0%, var(--canvas) 100%);
+      -webkit-tap-highlight-color: transparent;
+      overscroll-behavior-y: none;
+    }
+
+    button, select, textarea {
+      font: inherit;
+      touch-action: manipulation;
+    }
+
+    button {
+      min-height: 44px;
+      color: inherit;
+      -webkit-user-select: none;
+      user-select: none;
+    }
+
+    select, textarea { font-size: 16px; }
+
+    button:focus-visible,
+    select:focus-visible,
+    textarea:focus-visible {
+      outline: 3px solid rgba(35, 132, 165, .27);
+      outline-offset: 3px;
+    }
+
+    .skip-link {
+      position: fixed;
+      left: 12px;
+      top: -70px;
+      z-index: 100;
+      padding: 12px 16px;
+      border-radius: 10px;
+      color: #fff;
+      background: var(--navy);
+      text-decoration: none;
+    }
+
+    .skip-link:focus { top: 12px; }
+
+    .app-header {
+      position: sticky;
+      top: 0;
+      z-index: 20;
+      border-bottom: 1px solid rgba(205, 220, 226, .86);
+      background: rgba(255, 255, 255, .9);
+      backdrop-filter: blur(18px) saturate(150%);
+      -webkit-backdrop-filter: blur(18px) saturate(150%);
+      padding-top: var(--safe-top);
+    }
+
+    .header-inner {
+      width: min(1120px, calc(100% - 40px - var(--safe-left) - var(--safe-right)));
+      min-height: 72px;
+      margin: 0 auto;
+      display: flex;
+      align-items: center;
+      gap: 16px;
+    }
+
+    .brand {
+      display: inline-flex;
+      align-items: center;
+      gap: 12px;
+      min-width: 0;
+      min-height: 44px;
+      border: 0;
+      padding: 0;
+      background: transparent;
+      cursor: pointer;
+      text-align: left;
+    }
+
+    .brand-mark {
+      width: 41px;
+      height: 41px;
+      flex: 0 0 auto;
+      display: grid;
+      place-items: center;
+      border-radius: 12px;
+      color: #fff;
+      background: linear-gradient(145deg, var(--blue-2), var(--green));
+      box-shadow: 0 6px 18px rgba(23, 107, 135, .18);
+      font-size: 18px;
+      font-weight: 800;
+      letter-spacing: -.03em;
+    }
+
+    .brand-copy { min-width: 0; }
+    .brand-name {
+      display: block;
+      font-size: 16px;
+      font-weight: 800;
+      letter-spacing: -.02em;
+      white-space: nowrap;
+    }
+    .brand-sub {
+      display: block;
+      margin-top: 1px;
+      color: var(--muted);
+      font-size: 11px;
+      font-weight: 650;
+      white-space: nowrap;
+    }
+
+    .header-spacer { flex: 1; }
+
+    .today-pill {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      min-height: 38px;
+      padding: 7px 12px;
+      border: 1px solid #dbe8ec;
+      border-radius: 999px;
+      color: var(--blue);
+      background: #f8fcfd;
+      font-size: 13px;
+      font-weight: 750;
+      white-space: nowrap;
+    }
+
+    .today-dot {
+      width: 8px;
+      height: 8px;
+      border-radius: 50%;
+      background: var(--green);
+      box-shadow: 0 0 0 4px rgba(47, 133, 111, .11);
+    }
+
+    .home-button {
+      width: 44px;
+      height: 44px;
+      display: none;
+      place-items: center;
+      border: 1px solid var(--line);
+      border-radius: 12px;
+      background: #fff;
+      cursor: pointer;
+    }
+
+    .home-button.is-visible { display: grid; }
+
+    .app-nav {
+      position: fixed;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      z-index: 35;
+      display: grid;
+      grid-template-columns: repeat(5, minmax(0, 1fr));
+      gap: 3px;
+      min-height: calc(var(--mobile-nav-height) + var(--safe-bottom));
+      padding: 6px max(7px, var(--safe-right)) max(6px, var(--safe-bottom)) max(7px, var(--safe-left));
+      border-top: 1px solid rgba(205, 220, 226, .9);
+      background: rgba(255, 255, 255, .94);
+      box-shadow: 0 -8px 26px rgba(27, 62, 78, .07);
+      backdrop-filter: blur(20px) saturate(160%);
+      -webkit-backdrop-filter: blur(20px) saturate(160%);
+      transition: transform .2s ease;
+    }
+
+    .nav-heading { display: none; }
+
+    .nav-item {
+      min-width: 0;
+      min-height: 56px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      gap: 3px;
+      border: 0;
+      border-radius: 13px;
+      padding: 5px 3px;
+      color: var(--muted);
+      background: transparent;
+      cursor: pointer;
+      font-weight: 750;
+    }
+
+    .nav-symbol {
+      width: 27px;
+      height: 25px;
+      display: grid;
+      place-items: center;
+      border-radius: 8px;
+      font-size: 14px;
+      font-weight: 850;
+      line-height: 1;
+    }
+
+    .nav-label {
+      overflow: hidden;
+      max-width: 100%;
+      font-size: 10px;
+      line-height: 1.1;
+      text-overflow: ellipsis;
+      white-space: nowrap;
+    }
+
+    .nav-item.is-active {
+      color: var(--blue);
+      background: var(--blue-soft);
+    }
+
+    .nav-item.is-active .nav-symbol { color: var(--blue); }
+
+    .shell {
+      width: min(1120px, calc(100% - 40px - var(--safe-left) - var(--safe-right)));
+      margin: 0 auto;
+      padding: 46px 0 calc(26px + var(--safe-bottom));
+    }
+
+    .shell:focus { outline: none; }
+
+    .hero {
+      position: relative;
+      overflow: hidden;
+      display: grid;
+      grid-template-columns: 1.35fr .65fr;
+      gap: 28px;
+      align-items: center;
+      min-height: 265px;
+      padding: 43px 48px;
+      border: 1px solid #dce9ed;
+      border-radius: 28px;
+      background: var(--paper);
+      box-shadow: var(--shadow);
+    }
+
+    .hero::after {
+      content: "";
+      position: absolute;
+      width: 310px;
+      height: 310px;
+      right: -110px;
+      top: -125px;
+      border-radius: 50%;
+      background: linear-gradient(145deg, rgba(35, 132, 165, .12), rgba(47, 133, 111, .08));
+    }
+
+    .eyebrow {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      margin: 0 0 12px;
+      color: var(--blue);
+      font-size: 13px;
+      font-weight: 800;
+      letter-spacing: .08em;
+      text-transform: uppercase;
+    }
+
+    .eyebrow::before {
+      content: "";
+      width: 22px;
+      height: 2px;
+      border-radius: 2px;
+      background: var(--orange);
+    }
+
+    h1, h2, h3, p { margin-top: 0; }
+
+    .hero h1 {
+      max-width: 680px;
+      margin-bottom: 15px;
+      color: var(--navy);
+      font-size: clamp(30px, 4.3vw, 51px);
+      line-height: 1.13;
+      letter-spacing: -.045em;
+    }
+
+    .hero h1 span { color: var(--blue); }
+
+    .hero-lead {
+      max-width: 650px;
+      margin-bottom: 0;
+      color: var(--muted);
+      font-size: 16px;
+      line-height: 1.85;
+    }
+
+    .install-hint {
+      display: flex;
+      align-items: center;
+      gap: 9px;
+      width: fit-content;
+      margin: 16px 0 0;
+      padding: 9px 12px;
+      border: 1px solid #cfe0e6;
+      border-radius: 12px;
+      color: var(--blue);
+      background: var(--blue-soft);
+      font-size: 13px;
+      font-weight: 700;
+      line-height: 1.55;
+    }
+
+    .install-hint span {
+      width: 23px;
+      height: 23px;
+      flex: 0 0 auto;
+      display: grid;
+      place-items: center;
+      border-radius: 7px;
+      color: #fff;
+      background: var(--blue);
+      font-size: 16px;
+    }
+
+    .hero-meter {
+      position: relative;
+      z-index: 1;
+      padding: 25px;
+      border: 1px solid rgba(255,255,255,.75);
+      border-radius: 21px;
+      background: linear-gradient(150deg, var(--blue), #247b87 62%, var(--green));
+      color: #fff;
+      box-shadow: 0 16px 34px rgba(23, 107, 135, .2);
+    }
+
+    .hero-meter-label {
+      color: rgba(255,255,255,.78);
+      font-size: 12px;
+      font-weight: 700;
+    }
+
+    .hero-meter-value {
+      margin: 7px 0 17px;
+      font-size: 34px;
+      font-weight: 850;
+      letter-spacing: -.04em;
+    }
+
+    .hero-meter-value small {
+      margin-left: 4px;
+      font-size: 14px;
+      font-weight: 650;
+    }
+
+    .meter-track {
+      width: 100%;
+      height: 8px;
+      overflow: hidden;
+      border-radius: 999px;
+      background: rgba(255,255,255,.2);
+    }
+
+    .meter-track span {
+      display: block;
+      height: 100%;
+      border-radius: inherit;
+      background: #fff;
+    }
+
+    .meter-note {
+      margin: 12px 0 0;
+      color: rgba(255,255,255,.83);
+      font-size: 12px;
+      line-height: 1.5;
+    }
+
+    .section-heading {
+      display: flex;
+      align-items: flex-end;
+      justify-content: space-between;
+      gap: 18px;
+      margin: 42px 0 18px;
+    }
+
+    .section-heading h2 {
+      margin-bottom: 5px;
+      color: var(--navy);
+      font-size: 23px;
+      letter-spacing: -.025em;
+    }
+
+    .section-heading p {
+      margin-bottom: 0;
+      color: var(--muted);
+      font-size: 14px;
+    }
+
+    .mode-grid {
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: 18px;
+    }
+
+    .mode-card {
+      min-height: 190px;
+      display: grid;
+      grid-template-columns: auto 1fr auto;
+      gap: 19px;
+      align-items: start;
+      border: 1px solid var(--line);
+      border-radius: var(--radius);
+      padding: 25px;
+      background: var(--paper);
+      text-align: left;
+      cursor: pointer;
+      box-shadow: 0 4px 16px rgba(27, 62, 78, .035);
+      transition: transform .18s ease, border-color .18s ease, box-shadow .18s ease;
+    }
+
+    .mode-card:hover {
+      transform: translateY(-3px);
+      border-color: #b9d5de;
+      box-shadow: var(--shadow);
+    }
+
+    .mode-card:active { transform: translateY(-1px); }
+
+    .mode-icon {
+      width: 50px;
+      height: 50px;
+      display: grid;
+      place-items: center;
+      border-radius: 15px;
+      color: var(--blue);
+      background: var(--blue-soft);
+      font-size: 21px;
+      font-weight: 850;
+    }
+
+    .mode-card.weak .mode-icon { color: var(--orange-dark); background: var(--orange-soft); }
+    .mode-card.essay .mode-icon { color: var(--green); background: var(--green-soft); }
+    .mode-card.records .mode-icon { color: #6372a0; background: #f0f1f8; }
+
+    .mode-title {
+      display: block;
+      margin: 2px 0 8px;
+      color: var(--navy);
+      font-size: 19px;
+      font-weight: 800;
+      letter-spacing: -.02em;
+    }
+
+    .mode-description {
+      display: block;
+      margin: 0;
+      color: var(--muted);
+      font-size: 13px;
+      font-weight: 400;
+      line-height: 1.75;
+    }
+
+    .mode-meta {
+      grid-column: 2 / 4;
+      display: inline-flex;
+      width: fit-content;
+      align-items: center;
+      min-height: 27px;
+      padding: 5px 10px;
+      border-radius: 999px;
+      color: var(--blue);
+      background: #f1f8fa;
+      font-size: 12px;
+      font-weight: 750;
+    }
+
+    .chevron {
+      align-self: center;
+      color: #9babb3;
+      font-size: 24px;
+      line-height: 1;
+    }
+
+    .page-head {
+      display: flex;
+      align-items: flex-start;
+      gap: 17px;
+      margin-bottom: 28px;
+    }
+
+    .back-button {
+      width: 45px;
+      height: 45px;
+      flex: 0 0 auto;
+      display: grid;
+      place-items: center;
+      border: 1px solid var(--line);
+      border-radius: 13px;
+      background: #fff;
+      cursor: pointer;
+      box-shadow: 0 3px 10px rgba(27,62,78,.04);
+      font-size: 20px;
+    }
+
+    .page-head h1 {
+      margin: 0 0 5px;
+      color: var(--navy);
+      font-size: clamp(27px, 4vw, 38px);
+      line-height: 1.2;
+      letter-spacing: -.035em;
+    }
+
+    .page-head p {
+      margin-bottom: 0;
+      color: var(--muted);
+      font-size: 14px;
+      line-height: 1.65;
+    }
+
+    .subject-grid {
+      display: grid;
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+      gap: 15px;
+    }
+
+    .subject-actions,
+    .csv-actions {
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: 10px;
+      margin-bottom: 18px;
+    }
+
+    .subject-actions .btn,
+    .csv-actions .btn {
+      width: 100%;
+    }
+
+    .subject-card {
+      min-height: 166px;
+      border: 1px solid var(--line);
+      border-radius: 17px;
+      padding: 21px;
+      background: #fff;
+      cursor: pointer;
+      text-align: left;
+      transition: transform .17s ease, border-color .17s ease, box-shadow .17s ease;
+    }
+
+    .subject-card:hover {
+      transform: translateY(-2px);
+      border-color: #b9d5de;
+      box-shadow: 0 10px 26px rgba(27, 62, 78, .07);
+    }
+
+    .subject-top {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 12px;
+      margin-bottom: 22px;
+    }
+
+    .subject-symbol {
+      width: 41px;
+      height: 41px;
+      display: grid;
+      place-items: center;
+      border-radius: 12px;
+      color: var(--blue);
+      background: var(--blue-soft);
+      font-weight: 850;
+    }
+
+    .subject-count {
+      color: var(--muted);
+      font-size: 12px;
+      font-weight: 700;
+    }
+
+    .subject-name {
+      display: block;
+      margin-bottom: 12px;
+      color: var(--navy);
+      font-size: 18px;
+      font-weight: 800;
+    }
+
+    .thin-track {
+      display: block;
+      height: 6px;
+      overflow: hidden;
+      border-radius: 999px;
+      background: #edf2f4;
+    }
+
+    .thin-track span {
+      display: block;
+      height: 100%;
+      border-radius: inherit;
+      background: linear-gradient(90deg, var(--blue-2), var(--green));
+    }
+
+    .filter-bar {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 14px;
+      margin-bottom: 18px;
+      padding: 15px 18px;
+      border: 1px solid var(--line);
+      border-radius: 15px;
+      background: #fff;
+    }
+
+    .filter-bar label {
+      color: var(--navy);
+      font-size: 13px;
+      font-weight: 750;
+    }
+
+    select {
+      min-width: 170px;
+      min-height: 44px;
+      border: 1px solid #ccdbe1;
+      border-radius: 11px;
+      padding: 0 36px 0 13px;
+      color: var(--ink);
+      background: #fff;
+    }
+
+    .quiz-layout {
+      max-width: 800px;
+      margin: 0 auto;
+    }
+
+    .quiz-status {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 18px;
+      margin-bottom: 13px;
+      color: var(--muted);
+      font-size: 13px;
+      font-weight: 700;
+    }
+
+    .quiz-card {
+      overflow: hidden;
+      border: 1px solid var(--line);
+      border-radius: 24px;
+      background: #fff;
+      box-shadow: var(--shadow);
+    }
+
+    .quiz-card-head {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 12px;
+      padding: 17px 23px;
+      border-bottom: 1px solid #e7eef1;
+      background: #f9fcfd;
+    }
+
+    .subject-badge,
+    .status-badge {
+      display: inline-flex;
+      align-items: center;
+      min-height: 29px;
+      padding: 5px 10px;
+      border-radius: 999px;
+      color: var(--blue);
+      background: var(--blue-soft);
+      font-size: 12px;
+      font-weight: 800;
+    }
+
+    .status-badge.unsure { color: #aa5d21; background: var(--orange-soft); }
+    .status-badge.missed { color: var(--red); background: var(--red-soft); }
+    .status-badge.got { color: var(--green); background: var(--green-soft); }
+    .status-badge.correct { color: var(--green); background: var(--green-soft); }
+    .status-badge.incorrect { color: var(--red); background: var(--red-soft); }
+    .status-badge.review { color: #aa5d21; background: var(--orange-soft); }
+
+    .question-area { padding: clamp(26px, 5vw, 46px); }
+
+    .question-label {
+      margin-bottom: 12px;
+      color: var(--blue);
+      font-size: 12px;
+      font-weight: 850;
+      letter-spacing: .09em;
+    }
+
+    .question-text {
+      margin-bottom: 0;
+      color: var(--navy);
+      font-size: clamp(20px, 3.2vw, 27px);
+      font-weight: 750;
+      line-height: 1.65;
+      letter-spacing: -.015em;
+    }
+
+    .choice-list {
+      display: grid;
+      gap: 12px;
+      margin-top: 25px;
+    }
+
+    .choice-button {
+      width: 100%;
+      min-height: 58px;
+      display: grid;
+      grid-template-columns: 34px 1fr;
+      align-items: center;
+      gap: 12px;
+      border: 1px solid #d8e5e9;
+      border-radius: 16px;
+      padding: 13px 15px;
+      color: var(--ink);
+      background: #fff;
+      cursor: pointer;
+      text-align: left;
+      font-size: 16px;
+      font-weight: 750;
+      line-height: 1.55;
+      box-shadow: 0 4px 14px rgba(27, 62, 78, .04);
+      transition: transform .15s ease, border-color .15s ease, background .15s ease, box-shadow .15s ease;
+    }
+
+    .choice-button:hover {
+      transform: translateY(-1px);
+      border-color: #b7d8e1;
+      box-shadow: 0 9px 22px rgba(27, 62, 78, .07);
+    }
+
+    .choice-button:disabled {
+      cursor: default;
+      transform: none;
+      opacity: 1;
+    }
+
+    .choice-marker {
+      width: 31px;
+      height: 31px;
+      display: grid;
+      place-items: center;
+      border-radius: 10px;
+      color: var(--blue);
+      background: var(--blue-soft);
+      font-size: 13px;
+      font-weight: 900;
+    }
+
+    .choice-button.is-selected {
+      border-color: var(--blue-2);
+      background: #f0f9fc;
+    }
+
+    .choice-button.is-correct {
+      border-color: #8fd2bc;
+      background: var(--green-soft);
+    }
+
+    .choice-button.is-correct .choice-marker {
+      color: #fff;
+      background: var(--green);
+    }
+
+    .choice-button.is-wrong {
+      border-color: #edb8ba;
+      background: var(--red-soft);
+    }
+
+    .choice-button.is-wrong .choice-marker {
+      color: #fff;
+      background: var(--red);
+    }
+
+    .feedback-panel {
+      margin-top: 24px;
+      padding: 18px 19px;
+      border-radius: 16px;
+      animation: reveal .2s ease-out;
+    }
+
+    .feedback-panel.is-correct {
+      border: 1px solid #bfe0d4;
+      background: var(--green-soft);
+    }
+
+    .feedback-panel.is-incorrect {
+      border: 1px solid #efc5c6;
+      background: var(--red-soft);
+    }
+
+    .feedback-title {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      margin: 0 0 9px;
+      color: var(--navy);
+      font-size: 16px;
+      font-weight: 900;
+    }
+
+    .feedback-answer {
+      margin: 0 0 10px;
+      color: var(--ink);
+      font-size: 16px;
+      font-weight: 800;
+      line-height: 1.6;
+    }
+
+    .answer-panel {
+      margin-top: 29px;
+      padding: 23px;
+      border-left: 4px solid var(--green);
+      border-radius: 0 14px 14px 0;
+      background: var(--green-soft);
+      animation: reveal .2s ease-out;
+    }
+
+    @keyframes reveal {
+      from { opacity: 0; transform: translateY(5px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    .answer-panel h3 {
+      margin-bottom: 7px;
+      color: #246b5a;
+      font-size: 14px;
+    }
+
+    .answer-text {
+      margin-bottom: 13px;
+      color: var(--ink);
+      font-size: 18px;
+      font-weight: 800;
+      line-height: 1.6;
+    }
+
+    .explanation {
+      margin: 0;
+      padding-top: 13px;
+      border-top: 1px solid rgba(47, 133, 111, .18);
+      color: #4e6e66;
+      font-size: 14px;
+      line-height: 1.8;
+    }
+
+    .quiz-actions {
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: 10px;
+      padding: 18px 23px 23px;
+      border-top: 1px solid #e7eef1;
+    }
+
+    .btn {
+      min-height: 50px;
+      border: 1px solid transparent;
+      border-radius: 13px;
+      padding: 11px 18px;
+      cursor: pointer;
+      font-weight: 800;
+      transition: transform .15s ease, box-shadow .15s ease, background .15s ease;
+    }
+
+    .btn:hover { transform: translateY(-1px); }
+    .btn:active { transform: translateY(0); }
+    .btn-primary {
+      color: #fff;
+      background: var(--orange);
+      box-shadow: 0 8px 19px rgba(236, 123, 53, .2);
+    }
+    .btn-primary:hover { background: var(--orange-dark); }
+    .btn-blue { color: #fff; background: var(--blue); }
+    .btn-blue:hover { background: #105b74; }
+    .btn-secondary {
+      color: var(--navy);
+      border-color: var(--line);
+      background: #fff;
+    }
+    .btn-got { color: #246b5a; border-color: #bddfd3; background: var(--green-soft); }
+    .btn-unsure { color: #a25a20; border-color: #f1d0b6; background: var(--orange-soft); }
+    .btn-missed { color: #a84247; border-color: #efc5c6; background: var(--red-soft); }
+    .btn-wide { grid-column: 1 / -1; }
+
+    .grading-hint {
+      grid-column: 1 / -1;
+      margin: 0 0 2px;
+      color: var(--muted);
+      font-size: 12px;
+      text-align: center;
+    }
+
+    .result-banner {
+      grid-column: 1 / -1;
+      padding: 12px 15px;
+      border-radius: 12px;
+      color: var(--navy);
+      background: #f4f8f9;
+      font-size: 13px;
+      font-weight: 700;
+      text-align: center;
+    }
+
+    .empty-state,
+    .completion-card {
+      max-width: 710px;
+      margin: 45px auto 0;
+      padding: 48px 30px;
+      border: 1px solid var(--line);
+      border-radius: 23px;
+      background: #fff;
+      box-shadow: var(--shadow);
+      text-align: center;
+    }
+
+    .empty-icon {
+      width: 67px;
+      height: 67px;
+      display: grid;
+      place-items: center;
+      margin: 0 auto 20px;
+      border-radius: 20px;
+      color: var(--green);
+      background: var(--green-soft);
+      font-size: 27px;
+      font-weight: 850;
+    }
+
+    .empty-state h2,
+    .completion-card h2 {
+      margin-bottom: 10px;
+      color: var(--navy);
+      font-size: 24px;
+    }
+
+    .empty-state p,
+    .completion-card p {
+      max-width: 500px;
+      margin: 0 auto 24px;
+      color: var(--muted);
+      font-size: 14px;
+      line-height: 1.75;
+    }
+
+    .essay-layout {
+      display: grid;
+      grid-template-columns: minmax(0, 1fr) 300px;
+      gap: 21px;
+      align-items: start;
+    }
+
+    .essay-main,
+    .essay-guide,
+    .record-card {
+      border: 1px solid var(--line);
+      border-radius: var(--radius);
+      background: #fff;
+      box-shadow: 0 5px 20px rgba(27, 62, 78, .04);
+    }
+
+    .essay-topic {
+      padding: 28px;
+      border-bottom: 1px solid #e3ecef;
+      background: linear-gradient(135deg, #f3fafb, #f4fbf8);
+      border-radius: var(--radius) var(--radius) 0 0;
+    }
+
+    .essay-topic-top {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 14px;
+      margin-bottom: 15px;
+    }
+
+    .essay-topic h2 {
+      margin-bottom: 9px;
+      color: var(--navy);
+      font-size: clamp(22px, 3vw, 30px);
+      line-height: 1.45;
+      letter-spacing: -.025em;
+    }
+
+    .essay-topic p {
+      margin: 0;
+      color: var(--muted);
+      font-size: 13px;
+      line-height: 1.75;
+    }
+
+    .text-button {
+      flex: 0 0 auto;
+      min-height: 44px;
+      border: 1px solid #cbdde3;
+      border-radius: 11px;
+      padding: 8px 13px;
+      color: var(--blue);
+      background: #fff;
+      cursor: pointer;
+      font-size: 13px;
+      font-weight: 800;
+    }
+
+    .essay-fields {
+      display: grid;
+      gap: 23px;
+      padding: 28px;
+    }
+
+    .topic-select {
+      width: 100%;
+      margin-top: 16px;
+      background-color: #fff;
+      font-weight: 800;
+    }
+
+    .template-section {
+      display: grid;
+      gap: 12px;
+    }
+
+    .template-section h3 {
+      margin: 0;
+      color: var(--navy);
+      font-size: 17px;
+      line-height: 1.45;
+    }
+
+    .template-section p {
+      margin: 0;
+      color: var(--muted);
+      font-size: 13px;
+      line-height: 1.65;
+    }
+
+    .option-chips {
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: 10px;
+    }
+
+    .essay-chip {
+      min-height: 56px;
+      border: 1px solid #d8e5e9;
+      border-radius: 15px;
+      padding: 12px 14px;
+      color: var(--ink);
+      background: #fff;
+      cursor: pointer;
+      text-align: left;
+      font-size: 14px;
+      font-weight: 800;
+      line-height: 1.55;
+      box-shadow: 0 4px 12px rgba(27, 62, 78, .035);
+    }
+
+    .essay-chip.is-selected {
+      border-color: #9dd5c3;
+      color: #246b5a;
+      background: var(--green-soft);
+      box-shadow: inset 0 0 0 1px rgba(47, 133, 111, .1);
+    }
+
+    .memo-card {
+      padding: 22px;
+      border: 1px solid #cfe2e7;
+      border-radius: 18px;
+      background: linear-gradient(180deg, #fbfefe, #f4fafb);
+    }
+
+    .memo-card h3 {
+      margin: 0 0 13px;
+      color: var(--navy);
+      font-size: 18px;
+    }
+
+    .memo-list {
+      display: grid;
+      gap: 12px;
+      margin: 0;
+      padding: 0;
+      list-style: none;
+    }
+
+    .memo-list li {
+      display: grid;
+      grid-template-columns: 32px 1fr;
+      gap: 10px;
+      color: var(--ink);
+      font-size: 14px;
+      line-height: 1.75;
+    }
+
+    .memo-list strong {
+      color: var(--navy);
+      font-weight: 900;
+    }
+
+    .memo-num {
+      width: 29px;
+      height: 29px;
+      display: grid;
+      place-items: center;
+      border-radius: 10px;
+      color: #fff;
+      background: var(--blue);
+      font-size: 12px;
+      font-weight: 900;
+    }
+
+    .field label {
+      display: flex;
+      align-items: baseline;
+      justify-content: space-between;
+      gap: 12px;
+      margin-bottom: 9px;
+      color: var(--navy);
+      font-size: 14px;
+      font-weight: 800;
+    }
+
+    .field-number { color: var(--blue); margin-right: 7px; }
+    .char-count { color: var(--muted); font-size: 11px; font-weight: 650; }
+
+    textarea {
+      width: 100%;
+      min-height: 150px;
+      resize: vertical;
+      border: 1px solid #ccdbe1;
+      border-radius: 13px;
+      padding: 15px 16px;
+      color: var(--ink);
+      background: #fcfefe;
+      font-size: 16px;
+      line-height: 1.75;
+      transition: border-color .15s ease, background .15s ease;
+    }
+
+    textarea:focus {
+      border-color: var(--blue-2);
+      background: #fff;
+    }
+
+    textarea::placeholder { color: #9baab2; }
+
+    .essay-footer {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 16px;
+      padding-top: 2px;
+    }
+
+    .save-status {
+      display: inline-flex;
+      align-items: center;
+      gap: 7px;
+      color: var(--green);
+      font-size: 12px;
+      font-weight: 750;
+    }
+
+    .essay-guide {
+      position: sticky;
+      top: calc(92px + var(--safe-top));
+      overflow: hidden;
+    }
+
+    .guide-head {
+      padding: 20px 21px;
+      color: #fff;
+      background: linear-gradient(145deg, var(--blue), var(--green));
+    }
+
+    .guide-head p {
+      margin: 0 0 4px;
+      color: rgba(255,255,255,.76);
+      font-size: 11px;
+      font-weight: 750;
+      letter-spacing: .09em;
+    }
+
+    .guide-head h2 { margin: 0; font-size: 20px; }
+
+    .guide-steps {
+      list-style: none;
+      margin: 0;
+      padding: 7px 21px 16px;
+    }
+
+    .guide-steps li {
+      display: grid;
+      grid-template-columns: 30px 1fr;
+      gap: 10px;
+      padding: 15px 0;
+      border-bottom: 1px solid #e6edef;
+      color: var(--ink);
+      font-size: 13px;
+      font-weight: 700;
+      line-height: 1.55;
+    }
+
+    .guide-steps li:last-child { border-bottom: 0; }
+
+    .step-num {
+      width: 27px;
+      height: 27px;
+      display: grid;
+      place-items: center;
+      border-radius: 9px;
+      color: var(--blue);
+      background: var(--blue-soft);
+      font-size: 12px;
+      font-weight: 850;
+    }
+
+    .stats-grid {
+      display: grid;
+      grid-template-columns: repeat(4, minmax(0, 1fr));
+      gap: 14px;
+      margin-bottom: 21px;
+    }
+
+    .stat-card {
+      min-height: 142px;
+      padding: 21px;
+      border: 1px solid var(--line);
+      border-radius: 17px;
+      background: #fff;
+    }
+
+    .stat-icon {
+      width: 34px;
+      height: 34px;
+      display: grid;
+      place-items: center;
+      margin-bottom: 16px;
+      border-radius: 10px;
+      color: var(--blue);
+      background: var(--blue-soft);
+      font-size: 14px;
+      font-weight: 850;
+    }
+
+    .stat-value {
+      color: var(--navy);
+      font-size: 29px;
+      font-weight: 850;
+      letter-spacing: -.035em;
+    }
+
+    .stat-value small {
+      margin-left: 3px;
+      color: var(--muted);
+      font-size: 12px;
+      font-weight: 700;
+    }
+
+    .stat-label {
+      margin-top: 4px;
+      color: var(--muted);
+      font-size: 12px;
+      font-weight: 700;
+    }
+
+    .record-card { padding: 26px; }
+
+    .csv-panel {
+      display: none;
+      margin-top: 16px;
+      padding: 16px;
+      border: 1px solid var(--line);
+      border-radius: 16px;
+      background: #f8fcfd;
+    }
+
+    .csv-panel.is-visible { display: block; }
+
+    .csv-panel label {
+      display: block;
+      margin-bottom: 8px;
+      color: var(--navy);
+      font-size: 13px;
+      font-weight: 800;
+    }
+
+    .csv-panel textarea {
+      width: 100%;
+      min-height: 210px;
+      resize: vertical;
+      border: 1px solid #ccdbe1;
+      border-radius: 13px;
+      padding: 13px;
+      color: var(--ink);
+      background: #fff;
+      font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;
+      font-size: 12px;
+      line-height: 1.55;
+    }
+
+    .record-card-head {
+      display: flex;
+      align-items: flex-end;
+      justify-content: space-between;
+      gap: 15px;
+      margin-bottom: 22px;
+    }
+
+    .record-card-head h2 {
+      margin-bottom: 4px;
+      color: var(--navy);
+      font-size: 20px;
+    }
+
+    .record-card-head p {
+      margin: 0;
+      color: var(--muted);
+      font-size: 12px;
+    }
+
+    .record-list { display: grid; gap: 17px; }
+
+    .record-row {
+      display: grid;
+      grid-template-columns: 92px 1fr 130px;
+      gap: 15px;
+      align-items: center;
+    }
+
+    .record-subject {
+      color: var(--navy);
+      font-size: 13px;
+      font-weight: 800;
+    }
+
+    .record-track {
+      height: 10px;
+      overflow: hidden;
+      border-radius: 999px;
+      background: #edf2f4;
+    }
+
+    .record-track span {
+      display: block;
+      height: 100%;
+      border-radius: inherit;
+      background: linear-gradient(90deg, var(--blue-2), var(--green));
+    }
+
+    .record-numbers {
+      color: var(--muted);
+      font-size: 12px;
+      font-weight: 700;
+      text-align: right;
+    }
+
+    .record-numbers strong { color: var(--green); }
+
+    .record-note {
+      margin: 21px 0 0;
+      padding: 13px 15px;
+      border-radius: 11px;
+      color: #587079;
+      background: #f5f9fa;
+      font-size: 12px;
+      line-height: 1.65;
+    }
+
+    .toast {
+      position: fixed;
+      left: 50%;
+      bottom: calc(var(--mobile-nav-height) + var(--safe-bottom) + 16px);
+      z-index: 50;
+      transform: translate(-50%, 15px);
+      max-width: calc(100% - 32px);
+      padding: 12px 18px;
+      border-radius: 12px;
+      color: #fff;
+      background: rgba(23, 50, 77, .94);
+      box-shadow: 0 10px 28px rgba(22, 44, 61, .2);
+      font-size: 13px;
+      font-weight: 750;
+      opacity: 0;
+      pointer-events: none;
+      transition: opacity .2s ease, transform .2s ease;
+    }
+
+    .toast.is-visible {
+      opacity: 1;
+      transform: translate(-50%, 0);
+    }
+
+    .debug-status {
+      position: fixed;
+      right: max(10px, var(--safe-right));
+      bottom: calc(var(--mobile-nav-height) + var(--safe-bottom) + 8px);
+      z-index: 45;
+      max-width: min(280px, calc(100% - 20px));
+      padding: 7px 10px;
+      border: 1px solid rgba(23, 107, 135, .18);
+      border-radius: 999px;
+      color: var(--blue);
+      background: rgba(255, 255, 255, .92);
+      box-shadow: 0 8px 20px rgba(27, 62, 78, .08);
+      font-size: 11px;
+      font-weight: 800;
+      pointer-events: none;
+    }
+
+    .noscript {
+      width: min(700px, calc(100% - 40px));
+      margin: 50px auto;
+      padding: 24px;
+      border: 1px solid #efc5c6;
+      border-radius: 16px;
+      background: #fff;
+      color: var(--red);
+    }
+
+    @media (max-width: 850px) {
+      .hero { grid-template-columns: 1fr; }
+      .hero-meter { max-width: 390px; }
+      .subject-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+      .essay-layout { grid-template-columns: 1fr; }
+      .essay-guide { position: static; order: -1; }
+      .guide-steps { display: grid; grid-template-columns: repeat(2, 1fr); gap: 0 18px; }
+      .stats-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+    }
+
+    @media (max-width: 899px) {
+      body.keyboard-active .app-nav {
+        transform: translateY(calc(100% + var(--safe-bottom)));
+        pointer-events: none;
+      }
+    }
+
+    @media (max-width: 620px) {
+      .header-inner,
+      .shell { width: min(calc(100% - 28px - var(--safe-left) - var(--safe-right)), 1120px); }
+      .header-inner { min-height: 64px; gap: 10px; }
+      .brand-mark { width: 37px; height: 37px; border-radius: 11px; font-size: 16px; }
+      .brand-sub { display: none; }
+      .today-pill { padding: 6px 10px; font-size: 12px; }
+      .today-dot { display: none; }
+      .home-button { width: 44px; height: 44px; }
+      .shell { padding-top: 22px; }
+      .hero { min-height: auto; gap: 20px; padding: 25px 20px; border-radius: 22px; }
+      .hero h1 { font-size: 32px; }
+      .hero-lead { font-size: 14px; }
+      .hero-meter { padding: 19px; }
+      .hero-meter-value { margin-bottom: 13px; font-size: 30px; }
+      .section-heading { margin-top: 28px; }
+      .mode-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 10px; }
+      .mode-card {
+        min-height: 138px;
+        grid-template-columns: auto 1fr;
+        gap: 11px;
+        align-content: start;
+        padding: 16px;
+      }
+      .mode-icon { width: 43px; height: 43px; border-radius: 13px; font-size: 18px; }
+      .mode-title { margin-top: 4px; font-size: 16px; line-height: 1.35; }
+      .mode-description, .chevron { display: none; }
+      .mode-meta { grid-column: 1 / -1; min-height: 26px; font-size: 11px; }
+      .subject-actions,
+      .csv-actions { grid-template-columns: 1fr; }
+      .subject-grid { grid-template-columns: 1fr; gap: 11px; }
+      .subject-card { min-height: 126px; }
+      .subject-top { margin-bottom: 13px; }
+      .page-head { margin-bottom: 20px; }
+      .filter-bar { align-items: stretch; flex-direction: column; }
+      .filter-bar select { width: 100%; }
+      .quiz-card { border-radius: 19px; }
+      .question-area { padding: 27px 22px; }
+      .choice-button { min-height: 62px; padding: 13px; }
+      .quiz-card-head { padding: 14px 18px; }
+      .quiz-actions { grid-template-columns: 1fr; padding: 15px 18px 19px; }
+      .btn-wide, .grading-hint, .result-banner { grid-column: auto; }
+      .answer-panel { padding: 19px; }
+      .essay-topic, .essay-fields { padding: 21px; }
+      .essay-topic-top { align-items: flex-start; flex-direction: column; }
+      .option-chips { grid-template-columns: 1fr; }
+      .essay-footer { align-items: stretch; flex-direction: column; }
+      .essay-footer .btn { width: 100%; }
+      textarea { min-height: 165px; }
+      .guide-steps { grid-template-columns: 1fr; }
+      .stats-grid { gap: 10px; }
+      .stat-card { min-height: 128px; padding: 17px; }
+      .record-card { padding: 20px; }
+      .record-row { grid-template-columns: 72px 1fr; }
+      .record-numbers { grid-column: 2; text-align: left; }
+    }
+
+    @media (max-width: 380px) {
+      .brand-name { font-size: 14px; }
+      .today-pill { display: none; }
+      .hero h1 { font-size: 29px; }
+      .mode-card { min-height: 132px; padding: 14px; }
+      .stats-grid { grid-template-columns: 1fr; }
+    }
+
+    @media (min-width: 900px) and (min-height: 600px) {
+      html { scroll-padding-bottom: 24px; }
+      body { padding-bottom: 0; }
+      .app-nav {
+        top: calc(72px + var(--safe-top));
+        right: auto;
+        bottom: 0;
+        width: calc(220px + var(--safe-left));
+        min-height: 0;
+        grid-template-columns: 1fr;
+        grid-auto-rows: min-content;
+        align-content: start;
+        gap: 7px;
+        padding: 25px 14px calc(24px + var(--safe-bottom)) max(14px, var(--safe-left));
+        border-top: 0;
+        border-right: 1px solid rgba(205, 220, 226, .9);
+        box-shadow: 8px 0 26px rgba(27, 62, 78, .04);
+      }
+      .nav-heading {
+        display: block;
+        margin: 0 10px 10px;
+      }
+      .nav-heading span {
+        display: block;
+        margin-bottom: 4px;
+        color: var(--blue);
+        font-size: 10px;
+        font-weight: 800;
+        letter-spacing: .12em;
+      }
+      .nav-heading strong { color: var(--navy); font-size: 16px; }
+      .nav-item {
+        min-height: 52px;
+        flex-direction: row;
+        justify-content: flex-start;
+        gap: 11px;
+        padding: 7px 13px;
+      }
+      .nav-symbol { width: 34px; height: 34px; font-size: 15px; }
+      .nav-label { font-size: 14px; }
+      .shell {
+        width: min(1080px, calc(100% - 280px - var(--safe-left) - var(--safe-right)));
+        margin-right: auto;
+        margin-left: calc(248px + var(--safe-left));
+        padding-top: 36px;
+        padding-bottom: calc(60px + var(--safe-bottom));
+      }
+      .toast {
+        left: calc(50% + 110px);
+        bottom: calc(24px + var(--safe-bottom));
+      }
+    }
+
+    @media (prefers-color-scheme: dark) {
+      :root {
+        --navy: #edf6f8;
+        --blue: #77c9df;
+        --blue-2: #4bb1ce;
+        --blue-soft: #173844;
+        --green: #77c9ae;
+        --green-soft: #17372f;
+        --orange: #f39a5f;
+        --orange-dark: #e8813d;
+        --orange-soft: #452d20;
+        --red: #f18b90;
+        --red-soft: #452326;
+        --ink: #e5eef1;
+        --muted: #a4b5bc;
+        --line: #304752;
+        --paper: #16262e;
+        --canvas: #0d181e;
+        --shadow: 0 14px 38px rgba(0, 0, 0, .2);
+      }
+      html { color-scheme: dark; }
+      body {
+        background:
+          radial-gradient(circle at 10% -10%, rgba(75, 177, 206, .09), transparent 30rem),
+          linear-gradient(180deg, #102028 0%, var(--canvas) 100%);
+      }
+      .app-header,
+      .app-nav { border-color: rgba(54, 79, 90, .92); background: rgba(15, 29, 36, .94); }
+      .app-nav { box-shadow: 0 -8px 26px rgba(0, 0, 0, .18); }
+      .today-pill,
+      .home-button,
+      .back-button,
+      .subject-card,
+      .filter-bar,
+      .choice-button,
+      .essay-chip,
+      .csv-panel,
+      .csv-panel textarea,
+      .quiz-card,
+      .empty-state,
+      .completion-card,
+      .essay-main,
+      .essay-guide,
+      .record-card,
+      .stat-card,
+      .text-button,
+      .btn-secondary { background: var(--paper); }
+      .hero,
+      .mode-card,
+      .subject-card,
+      .filter-bar,
+      .quiz-card,
+      .essay-main,
+      .essay-guide,
+      .record-card,
+      .stat-card,
+      .empty-state,
+      .completion-card { border-color: var(--line); }
+      .today-pill { border-color: var(--line); background: #142a33; }
+      .install-hint { border-color: var(--line); }
+      .quiz-card-head { border-color: var(--line); background: #142a33; }
+      .quiz-actions,
+      .essay-topic,
+      .guide-steps li { border-color: var(--line); }
+      .essay-topic { background: linear-gradient(135deg, #142d36, #163028); }
+      .choice-button { border-color: #344c58; }
+      .choice-button.is-selected { background: #132f39; }
+      .choice-button.is-correct,
+      .feedback-panel.is-correct,
+      .essay-chip.is-selected { background: var(--green-soft); }
+      .choice-button.is-wrong,
+      .feedback-panel.is-incorrect { background: var(--red-soft); }
+      .memo-card { border-color: var(--line); background: #13262e; }
+      .csv-panel { border-color: var(--line); background: #13262e; }
+      select,
+      textarea { border-color: #3b5561; color: var(--ink); background: #102129; }
+      textarea:focus { background: #132731; }
+      .thin-track,
+      .record-track { background: #273b44; }
+      .result-banner,
+      .record-note { color: var(--muted); background: #1b3039; }
+      .answer-panel { background: var(--green-soft); }
+      .explanation { color: #a8c8bd; }
+      .debug-status { color: var(--blue); border-color: var(--line); background: rgba(18, 37, 46, .94); }
+      .skip-link { color: #102129; background: #e9f5f7; }
+    }
+
+    @media (prefers-reduced-motion: reduce) {
+      *, *::before, *::after {
+        scroll-behavior: auto !important;
+        animation-duration: .01ms !important;
+        transition-duration: .01ms !important;
+      }
+    }
+
+    @media print {
+      @page { size: A4; margin: 14mm; }
+      body { background: #fff; }
+      .app-header,
+      .app-nav,
+      .back-button,
+      .btn,
+      .text-button,
+      .filter-bar,
+      .toast { display: none !important; }
+      body { padding-bottom: 0; }
+      .shell { width: 100%; margin: 0; padding: 0; }
+      .hero,
+      .quiz-card,
+      .essay-main,
+      .essay-guide,
+      .record-card,
+      .stat-card {
+        box-shadow: none;
+        break-inside: avoid;
+      }
+      .essay-layout { grid-template-columns: 1fr; }
+      textarea { min-height: 110px; border-color: #aaa; }
+    }
+  </style>
+</head>
+<body>
+  <a class="skip-link" href="#main">本文へ移動</a>
+  <header class="app-header">
+    <div class="header-inner">
+      <button class="brand" type="button" data-action="home" aria-label="ホームへ戻る">
+        <span class="brand-mark">T</span>
+        <span class="brand-copy">
+          <span class="brand-name">TeacherOS Exam Cram</span>
+          <span class="brand-sub">小学校教員採用試験・直前対策</span>
+        </span>
+      </button>
+      <span class="header-spacer"></span>
+      <span class="today-pill"><span class="today-dot"></span><span id="header-today">今日 0問</span></span>
+      <button class="home-button" id="header-home" type="button" data-action="home" aria-label="ホームへ戻る">⌂</button>
+    </div>
+  </header>
+
+  <nav class="app-nav" aria-label="主要メニュー">
+    <div class="nav-heading"><span>STUDY MENU</span><strong>学習メニュー</strong></div>
+    <button class="nav-item is-active" type="button" data-action="home" data-nav="home" aria-current="page"><span class="nav-symbol">⌂</span><span class="nav-label">ホーム</span></button>
+    <button class="nav-item" type="button" data-action="subjects" data-nav="subjects"><span class="nav-symbol">全</span><span class="nav-label">全科</span></button>
+    <button class="nav-item" type="button" data-action="weak" data-nav="weak"><span class="nav-symbol">弱</span><span class="nav-label">苦手</span></button>
+    <button class="nav-item" type="button" data-action="essay" data-nav="essay"><span class="nav-symbol">論</span><span class="nav-label">論文</span></button>
+    <button class="nav-item" type="button" data-action="records" data-nav="records"><span class="nav-symbol">録</span><span class="nav-label">記録</span></button>
+  </nav>
+
+  <main class="shell" id="main" tabindex="-1">
+    <section class="hero" aria-labelledby="fallback-home-title">
+      <div>
+        <p class="eyebrow">Loading safe home</p>
+        <h1 id="fallback-home-title">TeacherOS Exam Cram</h1>
+        <p class="hero-lead">読み込み中です。もしこの表示のままでも、下のボタンから最低限の画面を開けます。</p>
+      </div>
+    </section>
+    <section class="mode-grid" aria-label="学習メニュー">
+      <button class="mode-card all" type="button" data-action="subjects"><span class="mode-icon">全</span><span><span class="mode-title">小学校全科を始める</span><span class="mode-description">選択式問題をタップで確認します。</span></span><span class="chevron" aria-hidden="true">›</span><span class="mode-meta">全65問</span></button>
+      <button class="mode-card weak" type="button" data-action="weak"><span class="mode-icon">弱</span><span><span class="mode-title">苦手問題を復習する</span><span class="mode-description">不正解・あとで復習の問題を確認します。</span></span><span class="chevron" aria-hidden="true">›</span><span class="mode-meta">復習</span></button>
+      <button class="mode-card essay" type="button" data-action="essay"><span class="mode-icon">論</span><span><span class="mode-title">論文練習をする</span><span class="mode-description">テーマとキーワードを選びます。</span></span><span class="chevron" aria-hidden="true">›</span><span class="mode-meta">構成メモ</span></button>
+      <button class="mode-card records" type="button" data-action="records"><span class="mode-icon">録</span><span><span class="mode-title">学習記録を見る</span><span class="mode-description">今日の学習状況を確認します。</span></span><span class="chevron" aria-hidden="true">›</span><span class="mode-meta">記録</span></button>
+    </section>
+  </main>
+  <div class="toast" id="toast" role="status" aria-live="polite"></div>
+  <div class="debug-status" id="debug-status" role="status" aria-live="polite">読み込み中</div>
+  <noscript><div class="noscript">このアプリを使うには、ブラウザのJavaScriptを有効にしてください。</div></noscript>
+
+  <script>
+    (function () {
+      "use strict";
+
+      var STORAGE_KEY = "teacherOS.examCram.tokyoElementary.v1";
+      var APP_VERSION = "1.4.0";
+      window.__teacherOSAppReady = false;
+      window.__teacherOSFallbackActive = false;
+
+      var safeFallbackView = "home";
+      var safeFallbackCurrentQuestion = null;
+      var safeFallbackSubjects = [
+        { id: "japanese", name: "国語", symbol: "国" },
+        { id: "social", name: "社会", symbol: "社" },
+        { id: "math", name: "算数", symbol: "算" },
+        { id: "science", name: "理科", symbol: "理" },
+        { id: "life", name: "生活", symbol: "生" },
+        { id: "music", name: "音楽", symbol: "音" },
+        { id: "art", name: "図画工作", symbol: "図" },
+        { id: "homeEconomics", name: "家庭", symbol: "家" },
+        { id: "pe", name: "体育", symbol: "体" },
+        { id: "english", name: "外国語", symbol: "英" },
+        { id: "moral", name: "特別の教科 道徳", symbol: "道" },
+        { id: "inquiry", name: "総合的な学習の時間", symbol: "総" },
+        { id: "activities", name: "特別活動", symbol: "特" }
+      ];
+      var safeFallbackQuestions = [
+        { id: "safe-ja", subject: "japanese", question: "「しかし」はどのような働きの接続語ですか。", choices: ["逆接", "順接", "例示", "並列"], correctIndex: 0, answer: "逆接", explanation: "前の内容と反対・対立する内容をつなぎます。" },
+        { id: "safe-so", subject: "social", question: "日本国憲法の三原則として正しいものはどれですか。", choices: ["国民主権・基本的人権の尊重・平和主義", "参勤交代・鎖国・身分制度", "輸入・輸出・消費", "行政・産業・貿易"], correctIndex: 0, answer: "国民主権・基本的人権の尊重・平和主義", explanation: "日本国憲法の基本となる三つの原則です。" },
+        { id: "safe-ma", subject: "math", question: "底辺8cm、高さ5cmの三角形の面積はどれですか。", choices: ["20cm²", "40cm²", "13cm²", "80cm²"], correctIndex: 0, answer: "20cm²", explanation: "三角形の面積は、底辺×高さ÷2です。" },
+        { id: "safe-sc", subject: "science", question: "植物が日光を受けて養分をつくる働きはどれですか。", choices: ["光合成", "蒸散", "燃焼", "凝固"], correctIndex: 0, answer: "光合成", explanation: "主に葉で行われ、酸素も放出されます。" },
+        { id: "safe-li", subject: "life", question: "生活科で重視する活動として適切なものはどれですか。", choices: ["身近な人・社会・自然と関わり、気付きの質を高める活動", "中学校の公式を先取りする活動", "用語を暗記するだけの活動", "運動技能だけを競う活動"], correctIndex: 0, answer: "身近な人・社会・自然と関わり、気付きの質を高める活動", explanation: "生活科は低学年で、具体的な活動や体験を通した気付きを大切にします。" },
+        { id: "safe-mu", subject: "music", question: "4分の4拍子で1小節に入る4分音符の数はどれですか。", choices: ["4つ", "2つ", "3つ", "8つ"], correctIndex: 0, answer: "4つ", explanation: "分子は1小節の拍数、分母は1拍の音符を表します。" },
+        { id: "safe-ar", subject: "art", question: "色の三要素として正しいものはどれですか。", choices: ["色相・明度・彩度", "速度・温度・湿度", "主語・述語・修飾語", "加算・減算・乗算"], correctIndex: 0, answer: "色相・明度・彩度", explanation: "色相は色み、明度は明るさ、彩度は鮮やかさです。" },
+        { id: "safe-ho", subject: "homeEconomics", question: "手縫いの縫い始めで糸が抜けないようにする処理はどれですか。", choices: ["玉結び", "返し口", "仮止め", "地直し"], correctIndex: 0, answer: "玉結び", explanation: "縫い終わりには玉どめで糸を固定します。" },
+        { id: "safe-pe", subject: "pe", question: "暑い日の運動で熱中症を防ぐ基本はどれですか。", choices: ["休憩・水分補給・運動量の調整", "厚着して水分を控える", "体調確認をしない", "日陰を使わない"], correctIndex: 0, answer: "休憩・水分補給・運動量の調整", explanation: "気温や湿度、児童の体調に応じた判断が必要です。" },
+        { id: "safe-en", subject: "english", question: "Do you like music? に肯定で答える表現はどれですか。", choices: ["Yes, I do.", "Yes, I am.", "Yes, I can.", "Yes, it is."], correctIndex: 0, answer: "Yes, I do.", explanation: "Do you ...? には Yes, I do. / No, I do not. で答えます。" },
+        { id: "safe-mo", subject: "moral", question: "道徳科の評価として適切なものはどれですか。", choices: ["児童の学習状況や成長の様子を記述で見取る", "数値だけで評定する", "正解数だけで順位を付ける", "教師の価値観を暗記させる"], correctIndex: 0, answer: "児童の学習状況や成長の様子を記述で見取る", explanation: "道徳科では考えの深まりや自己を見つめる姿を大切にします。" },
+        { id: "safe-in", subject: "inquiry", question: "総合的な学習の時間の探究の過程として適切な順序はどれですか。", choices: ["課題設定→情報収集→整理・分析→まとめ・表現", "暗記→採点→順位付け→終了", "準備運動→主運動→整理運動→記録", "観察→発芽→開花→結実"], correctIndex: 0, answer: "課題設定→情報収集→整理・分析→まとめ・表現", explanation: "探究の過程を発展的に繰り返すことが大切です。" },
+        { id: "safe-ac", subject: "activities", question: "特別活動に含まれるものとして正しい組み合わせはどれですか。", choices: ["学級活動・児童会活動・クラブ活動・学校行事", "国語・算数・理科・社会", "音読・計算・漢字・作文", "観察・実験・測定・記録"], correctIndex: 0, answer: "学級活動・児童会活動・クラブ活動・学校行事", explanation: "集団や学校生活をよりよくする実践的な活動です。" }
+      ];
+
+      function byId(id) {
+        return document.getElementById(id);
+      }
+
+      function setDebugStatus(message) {
+        var status = byId("debug-status");
+        if (status) status.textContent = message;
+      }
+
+      function safeEscape(value) {
+        return String(value || "")
+          .replace(/&/g, "&amp;")
+          .replace(/</g, "&lt;")
+          .replace(/>/g, "&gt;")
+          .replace(/"/g, "&quot;")
+          .replace(/'/g, "&#039;");
+      }
+
+      function findActionElement(target) {
+        var node = target;
+        while (node && node !== document) {
+          if (node.getAttribute && node.getAttribute("data-action")) return node;
+          node = node.parentNode;
+        }
+        return null;
+      }
+
+      function safeSubjectName(id) {
+        var list = (typeof subjects !== "undefined" && subjects && subjects.length) ? subjects : safeFallbackSubjects;
+        for (var i = 0; i < list.length; i += 1) {
+          if (list[i].id === id) return list[i].name;
+        }
+        return "小学校全科";
+      }
+
+      function safeQuestionList() {
+        if (typeof questions !== "undefined" && questions && questions.length) return questions;
+        return safeFallbackQuestions;
+      }
+
+      function safeQuestionsForSubject(subjectId) {
+        var source = safeQuestionList();
+        var result = [];
+        for (var i = 0; i < source.length; i += 1) {
+          if (source[i].subject === subjectId) result.push(source[i]);
+        }
+        if (!result.length && source.length) result.push(source[0]);
+        return result;
+      }
+
+      function safeReadState() {
+        try {
+          var storage = window.localStorage;
+          if (!storage) return null;
+          var raw = storage.getItem(STORAGE_KEY);
+          return raw ? JSON.parse(raw) : null;
+        } catch (error) {
+          return null;
+        }
+      }
+
+      function safeWriteState(patch) {
+        try {
+          var storage = window.localStorage;
+          if (!storage) return false;
+          var current = safeReadState() || {};
+          for (var key in patch) {
+            if (Object.prototype.hasOwnProperty.call(patch, key)) current[key] = patch[key];
+          }
+          current.updatedAt = new Date().toISOString();
+          current.appVersion = APP_VERSION;
+          storage.setItem(STORAGE_KEY, JSON.stringify(current));
+          return true;
+        } catch (error) {
+          return false;
+        }
+      }
+
+      function safeSetNav(view) {
+        var navItems = document.querySelectorAll ? document.querySelectorAll("[data-nav]") : [];
+        for (var i = 0; i < navItems.length; i += 1) {
+          var active = navItems[i].getAttribute("data-nav") === view;
+          if (navItems[i].classList) {
+            if (active) navItems[i].classList.add("is-active");
+            else navItems[i].classList.remove("is-active");
+          }
+          if (active) navItems[i].setAttribute("aria-current", "page");
+          else navItems[i].removeAttribute("aria-current");
+        }
+      }
+
+      function safeHead(title, description) {
+        return '<div class="page-head"><button class="back-button" type="button" data-action="home" aria-label="ホームへ戻る">←</button><div><h1>' + safeEscape(title) + '</h1><p>' + safeEscape(description) + '</p></div></div>';
+      }
+
+      function safeModeButton(action, symbol, title, description) {
+        return '<button class="mode-card" type="button" data-action="' + action + '"><span class="mode-icon">' + symbol + '</span><span><span class="mode-title">' + safeEscape(title) + '</span><span class="mode-description">' + safeEscape(description) + '</span></span><span class="chevron" aria-hidden="true">›</span><span class="mode-meta">開く</span></button>';
+      }
+
+      function renderSafeFallback(view, reason) {
+        var main = byId("main");
+        if (!main) return;
+        window.__teacherOSFallbackActive = true;
+        safeFallbackView = view || "home";
+        var html = "";
+        if (safeFallbackView === "home") {
+          html = '<section class="hero" aria-labelledby="safe-home-title"><div><p class="eyebrow">Safe mode</p><h1 id="safe-home-title">TeacherOS Exam Cram</h1><p class="hero-lead">iPhone Safari向けの安全表示で起動しています。まず画面遷移と問題表示を優先します。</p>' + (reason ? '<p class="install-hint"><span>!</span>' + safeEscape(reason) + '</p>' : '') + '</div></section><div class="section-heading"><div><h2>学習メニュー</h2><p>取り組みたいモードを選んでください</p></div></div><section class="mode-grid" aria-label="学習メニュー">' + safeModeButton("subjects", "全", "小学校全科を始める", "選択式問題をタップで確認します。") + safeModeButton("weak", "弱", "苦手問題を復習する", "不正解・あとで復習の問題を確認します。") + safeModeButton("essay", "論", "論文練習をする", "テーマとキーワードを選びます。") + safeModeButton("records", "録", "学習記録を見る", "今日の学習状況を確認します。") + '</section>';
+          safeSetNav("home");
+        } else if (safeFallbackView === "subjects") {
+          var subjectSource = (typeof subjects !== "undefined" && subjects && subjects.length) ? subjects : safeFallbackSubjects;
+          var cards = "";
+          for (var s = 0; s < subjectSource.length; s += 1) {
+            cards += '<button class="subject-card" type="button" data-action="safe-start-subject" data-subject="' + subjectSource[s].id + '"><span class="subject-top"><span class="subject-symbol">' + safeEscape(subjectSource[s].symbol) + '</span><span class="subject-count">選択式</span></span><span class="subject-name">' + safeEscape(subjectSource[s].name) + '</span><span class="thin-track"><span style="width:0%"></span></span></button>';
+          }
+          html = safeHead("小学校全科モード", "教科を選ぶと選択式問題を表示します。") + '<section class="subject-grid" aria-label="教科一覧">' + cards + '</section>';
+          safeSetNav("subjects");
+        } else if (safeFallbackView === "weak") {
+          html = safeHead("苦手問題モード", "安全表示では、まず復習画面が開くことを優先します。") + '<section class="empty-state"><div class="empty-icon">弱</div><h2>復習画面を表示中</h2><p>通常起動後は、不正解と「あとで復習」にした問題がここに表示されます。</p><button class="btn btn-blue" type="button" data-action="subjects">全科モードへ</button></section>';
+          safeSetNav("weak");
+        } else if (safeFallbackView === "essay") {
+          html = safeHead("論文練習モード", "テーマと型を短時間で確認します。") + '<div class="essay-layout"><section class="essay-main"><div class="essay-topic"><div class="essay-topic-top"><span class="subject-badge">テーマ例</span></div><h2>ICTを活用した個別最適な学び</h2><p>キーワード：個別最適な学び、協働的な学び、教師の見取り</p></div><div class="essay-fields"><div class="memo-card"><h3>論文構成メモ</h3><ol class="memo-list"><li><span class="memo-num">1</span><span><strong>課題</strong><br>教育課題を明確にする。</span></li><li><span class="memo-num">2</span><span><strong>方針</strong><br>教師としての基本姿勢を書く。</span></li><li><span class="memo-num">3</span><span><strong>実践</strong><br>具体的な実践を2つ書く。</span></li><li><span class="memo-num">4</span><span><strong>まとめ</strong><br>児童の成長につなげてまとめる。</span></li></ol></div></div></section></div>';
+          safeSetNav("essay");
+        } else if (safeFallbackView === "records") {
+          var saved = safeReadState();
+          var answered = 0;
+          if (saved && saved.daily) {
+            for (var day in saved.daily) {
+              if (Object.prototype.hasOwnProperty.call(saved.daily, day) && saved.daily[day] && saved.daily[day].answered) answered += saved.daily[day].answered;
+            }
+          }
+          html = safeHead("学習記録", "保存に失敗しても画面は表示します。") + '<section class="stats-grid"><div class="stat-card"><div class="stat-icon">問</div><div class="stat-value">' + answered + '<small>問</small></div><div class="stat-label">保存済み回答</div></div><div class="stat-card"><div class="stat-icon">OK</div><div class="stat-value">表示<small>中</small></div><div class="stat-label">読み込み状態</div></div></section>';
+          safeSetNav("records");
+        } else if (safeFallbackView === "quiz") {
+          var qList = safeQuestionsForSubject(safeFallbackCurrentQuestion && safeFallbackCurrentQuestion.subject ? safeFallbackCurrentQuestion.subject : "math");
+          var qItem = safeFallbackCurrentQuestion || qList[0];
+          safeFallbackCurrentQuestion = qItem;
+          var choicesHtml = "";
+          for (var c = 0; c < qItem.choices.length; c += 1) {
+            choicesHtml += '<button class="choice-button" type="button" data-action="safe-choose-answer" data-choice="' + c + '"><span class="choice-marker">' + String.fromCharCode(65 + c) + '</span><span>' + safeEscape(qItem.choices[c]) + '</span></button>';
+          }
+          html = safeHead(safeSubjectName(qItem.subject), "選択肢をタップしてください。") + '<div class="quiz-layout"><article class="quiz-card"><div class="quiz-card-head"><span class="subject-badge">' + safeEscape(safeSubjectName(qItem.subject)) + '</span><span class="status-badge">安全表示</span></div><div class="question-area"><div class="question-label">QUESTION</div><p class="question-text">' + safeEscape(qItem.question) + '</p><div class="choice-list">' + choicesHtml + '</div><div id="safe-feedback"></div></div><div class="quiz-actions"><p class="grading-hint">選択肢をタップしてください。</p></div></article></div>';
+          safeSetNav("subjects");
+        }
+        main.innerHTML = html;
+        setDebugStatus("読み込みOK: " + safeFallbackView + (window.__teacherOSAppReady ? "" : " / safe"));
+      }
+
+      function safeFallbackClick(event) {
+        if (window.__teacherOSAppReady) return;
+        var button = findActionElement(event.target);
+        if (!button) return;
+        var action = button.getAttribute("data-action");
+        if (action === "home") renderSafeFallback("home");
+        else if (action === "subjects") renderSafeFallback("subjects");
+        else if (action === "weak") renderSafeFallback("weak");
+        else if (action === "essay") renderSafeFallback("essay");
+        else if (action === "records") renderSafeFallback("records");
+        else if (action === "safe-start-subject") {
+          var subjectId = button.getAttribute("data-subject") || "math";
+          var qList = safeQuestionsForSubject(subjectId);
+          safeFallbackCurrentQuestion = qList[0];
+          renderSafeFallback("quiz");
+        } else if (action === "safe-choose-answer" && safeFallbackCurrentQuestion) {
+          var selected = parseInt(button.getAttribute("data-choice"), 10);
+          var correct = selected === safeFallbackCurrentQuestion.correctIndex;
+          var feedback = byId("safe-feedback");
+          if (feedback) {
+            feedback.innerHTML = '<div class="feedback-panel ' + (correct ? 'is-correct' : 'is-incorrect') + '"><p class="feedback-title">' + (correct ? '✓ 正解です' : '✕ 不正解です') + '</p><p class="feedback-answer">正解：' + safeEscape(safeFallbackCurrentQuestion.answer) + '</p><p class="explanation"><strong>ポイント：</strong>' + safeEscape(safeFallbackCurrentQuestion.explanation) + '</p></div>';
+          }
+          if (!correct) safeWriteState({ weakIds: [safeFallbackCurrentQuestion.id] });
+        }
+      }
+
+      document.addEventListener("click", safeFallbackClick, false);
+      window.addEventListener("error", function () {
+        if (!window.__teacherOSAppReady) renderSafeFallback(safeFallbackView || "home", "一部のJavaScriptでエラーが出たため、安全表示に切り替えました。");
+      }, false);
+      window.addEventListener("unhandledrejection", function () {
+        if (!window.__teacherOSAppReady) renderSafeFallback(safeFallbackView || "home", "読み込み処理を安全表示で継続しています。");
+      }, false);
+      function ensureInitialSafePaint() {
+        if (!window.__teacherOSAppReady) {
+          var main = byId("main");
+          if (!main || !main.innerHTML || !main.innerHTML.replace(/\s/g, "")) renderSafeFallback("home", "読み込みOK");
+          else setDebugStatus("読み込みOK: home / safe");
+        }
+      }
+      if (document.readyState === "loading") {
+        document.addEventListener("DOMContentLoaded", ensureInitialSafePaint, false);
+      } else {
+        window.setTimeout(ensureInitialSafePaint, 0);
+      }
+      var isAppleMobile = /iPad|iPhone|iPod/.test(window.navigator.userAgent) || (window.navigator.platform === "MacIntel" && window.navigator.maxTouchPoints > 1);
+      var isStandaloneMode = false;
+
+      function setupStandaloneMode() {
+        try {
+          var standaloneQuery = window.matchMedia ? window.matchMedia("(display-mode: standalone)") : null;
+          isStandaloneMode = Boolean((standaloneQuery && standaloneQuery.matches) || window.navigator.standalone === true);
+          if (document.documentElement.classList) {
+            if (isStandaloneMode) document.documentElement.classList.add("is-standalone");
+            else document.documentElement.classList.remove("is-standalone");
+          }
+        } catch (error) {
+          isStandaloneMode = false;
+        }
+      }
+
+      function registerServiceWorker() {
+        if (!("serviceWorker" in window.navigator)) return;
+        var secureOrigin = window.location.protocol === "https:" || window.location.hostname === "localhost" || window.location.hostname === "127.0.0.1";
+        if (!secureOrigin) return;
+        window.addEventListener("load", function () {
+          window.navigator.serviceWorker.register("./service-worker.js", { scope: "./" }).then(function () {
+            return window.navigator.serviceWorker.ready;
+          }).then(function () {
+            document.documentElement.setAttribute("data-offline-ready", "true");
+          }).catch(function () {
+            /* The app remains fully usable online when Service Worker registration is unavailable. */
+          });
+        }, { once: true });
+      }
+
+      setupStandaloneMode();
+      registerServiceWorker();
+
+      var subjects = [
+        { id: "japanese", name: "国語", symbol: "国" },
+        { id: "social", name: "社会", symbol: "社" },
+        { id: "math", name: "算数", symbol: "算" },
+        { id: "science", name: "理科", symbol: "理" },
+        { id: "life", name: "生活", symbol: "生" },
+        { id: "music", name: "音楽", symbol: "音" },
+        { id: "art", name: "図画工作", symbol: "図" },
+        { id: "homeEconomics", name: "家庭", symbol: "家" },
+        { id: "pe", name: "体育", symbol: "体" },
+        { id: "english", name: "外国語", symbol: "英" },
+        { id: "moral", name: "特別の教科 道徳", symbol: "道" },
+        { id: "inquiry", name: "総合的な学習の時間", symbol: "総" },
+        { id: "activities", name: "特別活動", symbol: "特" }
+      ];
+
+      function q(id, subject, question, correct, distractors, explanation) {
+        return {
+          id: id,
+          subject: subject,
+          question: question,
+          choices: [correct].concat(distractors),
+          correctIndex: 0,
+          answer: correct,
+          explanation: explanation
+        };
+      }
+
+      var questions = [
+        q("tk-ja01", "japanese", "「児童のコウキシンを大切にする」のカタカナを漢字に直したものとして適切なものはどれですか。", "好奇心", ["高規心", "好機心", "考奇心"], "好奇心は、珍しいことや未知のことを知りたいと思う気持ちです。"),
+        q("tk-ja02", "japanese", "「この本を読みたい」の「この」の品詞として正しいものはどれですか。", "連体詞", ["副詞", "接続詞", "感動詞"], "「この」は後ろの名詞「本」を修飾します。活用しない連体詞です。"),
+        q("tk-ja03", "japanese", "慣用句「的を射る」の意味として最も適切なものはどれですか。", "要点を正確にとらえる", ["目標を外す", "話を大げさにする", "急いで逃げる"], "発言や判断が物事の核心を正しく突いているときに使います。"),
+        q("tk-ja04", "japanese", "「校長先生が資料をご覧になる」の「ご覧になる」はどの種類の敬語ですか。", "尊敬語", ["謙譲語", "丁寧語", "美化語"], "「ご覧になる」は「見る」の尊敬語で、見る人を高める表現です。"),
+        q("tk-ja05", "japanese", "説明文で筆者の主張を捉える手掛かりとして適切なものはどれですか。", "繰り返される語、段落の中心文、接続語", ["文字の大きさだけ", "登場人物の服装だけ", "挿絵の色だけ"], "主張は文章の問いと答え、段落同士のつながりから読み取ります。"),
+
+        q("tk-so01", "social", "日本国憲法の三つの基本原則として正しい組み合わせはどれですか。", "国民主権・基本的人権の尊重・平和主義", ["鎖国・参勤交代・身分制度", "輸入・輸出・消費", "司法権・警察権・徴税権"], "日本国憲法の基本原則は、政治や国民生活の土台になります。"),
+        q("tk-so02", "social", "縮尺1:25,000の地図で、地図上の4cmは実際の何kmに当たりますか。", "1km", ["100m", "4km", "25km"], "4cm×25,000=100,000cmで、100,000cmは1kmです。"),
+        q("tk-so03", "social", "鎌倉幕府で、将軍と御家人の主従関係を支えた考え方として適切なものはどれですか。", "御恩と奉公", ["富国強兵", "楽市楽座", "廃藩置県"], "将軍が土地などを保障し、御家人が軍役などで仕える関係です。"),
+        q("tk-so04", "social", "衆議院議員総選挙で採られている制度として正しいものはどれですか。", "小選挙区比例代表並立制", ["大名行列制", "身分代表制", "株主投票制"], "小選挙区選挙と比例代表選挙を組み合わせた制度です。"),
+        q("tk-so05", "social", "太平洋側の地域で、冬に晴天が多く空気が乾燥しやすい主な理由はどれですか。", "日本海側で雪を降らせた季節風が山地を越えて乾いた風になるため", ["夏の台風が毎日通るため", "太陽が西から昇るため", "海流がすべて止まるため"], "冬の季節風は日本海側に雪を降らせ、山地を越えると乾いた風になりやすいです。"),
+
+        q("tk-ma01", "math", "式 12÷3＋(1/2−1/4)×8 の値はどれですか。", "6", ["2", "8", "10"], "12÷3=4、1/2−1/4=1/4、1/4×8=2なので、4+2=6です。"),
+        q("tk-ma02", "math", "比例の関係 y=2x+5 で、x=4 のときの y の値はどれですか。", "13", ["8", "9", "18"], "xに4を代入すると、2×4+5=13です。"),
+        q("tk-ma03", "math", "12、15、9、18、11 のデータの範囲はどれですか。", "9", ["5", "12", "18"], "範囲は最大値−最小値です。18−9=9です。"),
+        q("tk-ma04", "math", "赤玉が36個あり、袋全体の30％に当たります。袋全体の玉の数はどれですか。", "120個", ["66個", "90個", "108個"], "36÷0.30=120です。割合から全体を求めるときは、部分÷割合です。"),
+        q("tk-ma05", "math", "小学校算数で「割合」を本格的に扱う主な学年として適切なものはどれですか。", "第5学年", ["第1学年", "第2学年", "第3学年"], "割合、百分率、歩合は第5学年で重点的に扱われます。"),
+
+        q("tk-sc01", "science", "ろ過の操作として適切なものはどれですか。", "ガラス棒に液を伝わせ、ろうとの内側に沿って静かに注ぐ", ["ろ紙の中央に勢いよく流し込む", "ろ紙を使わず手でこす", "沈殿物を火で直接あぶる"], "ろ紙を破らず、液があふれないように静かに注ぐことが大切です。"),
+        q("tk-sc02", "science", "動物細胞と植物細胞に共通して見られる構造の組み合わせはどれですか。", "核と細胞膜", ["細胞壁と葉緑体", "葉緑体と根毛", "気孔と維管束"], "植物細胞には細胞壁や葉緑体があるものもありますが、動物細胞には通常ありません。"),
+        q("tk-sc03", "science", "凸レンズで、物体を焦点距離より十分遠くに置いたときにできる像として一般に正しいものはどれですか。", "上下左右が反対の実像", ["必ず同じ向きの虚像", "光を通さない影だけ", "像はまったくできない"], "スクリーンに映る実像は、物体とは上下左右が反対になります。"),
+        q("tk-sc04", "science", "ある温度での飽和水蒸気量が17.3g/m³、実際の水蒸気量が8.65g/m³のとき、湿度は何％ですか。", "50％", ["25％", "75％", "100％"], "湿度=実際の水蒸気量÷飽和水蒸気量×100です。8.65÷17.3×100=50です。"),
+        q("tk-sc05", "science", "夏の日本付近で、晴れて暑い日が続きやすい気圧配置と関係が深いものはどれですか。", "太平洋高気圧", ["シベリア高気圧", "オホーツク海高気圧のみ", "移動性高気圧のみ"], "夏は太平洋高気圧に覆われると、晴れて気温が上がりやすくなります。"),
+
+        q("tk-li01", "life", "生活科が主に対象とする学年として正しいものはどれですか。", "第1学年・第2学年", ["第3学年・第4学年", "第5学年・第6学年", "中学校全学年"], "生活科は低学年で、身近な生活や自然との関わりを通して学びます。"),
+        q("tk-li02", "life", "学校探検の学習で重視したい児童の姿として適切なものはどれですか。", "見つけたことや気付いたことを友達に伝え、学校生活への関心を高める", ["校内の部屋名を教師が一方的に暗記させる", "危険な場所に一人で入らせる", "探検後の振り返りを行わない"], "体験後に言葉や絵で表すことで、気付きの質が高まります。"),
+        q("tk-li03", "life", "アサガオを育てる活動で、学習上大切にしたいことはどれですか。", "世話をしながら変化を継続して観察し、気付きを表現する", ["発芽後は観察しない", "教師だけが世話をする", "結果だけを丸暗記する"], "継続的な関わりから、生命への親しみや気付きが育ちます。"),
+        q("tk-li04", "life", "地域の店を訪問する学習で、事前に行う安全指導として適切なものはどれですか。", "歩き方、集合場所、あいさつ、質問の仕方を確認する", ["走って先に行くよう指示する", "知らない場所へ自由に分散させる", "訪問先への連絡をしない"], "体験活動では、学習のねらいと安全・マナーを事前に共有します。"),
+        q("tk-li05", "life", "生活科の振り返りで有効な表現方法として適切なものはどれですか。", "絵、言葉、動作、発表などで気付きを表す", ["正解だけを番号で選ばせて終える", "振り返りを一切しない", "友達の気付きを聞かせない"], "多様な表現を通して、気付きが自覚され、次の活動につながります。"),
+
+        q("tk-mu01", "music", "小学校の音楽で扱われる共通教材の曲名として適切なものはどれですか。", "うみ", ["春の祭典", "運命交響曲", "魔王"], "共通教材には、日本の歌に親しむための曲が含まれます。"),
+        q("tk-mu02", "music", "音楽記号「cresc.」が示す意味はどれですか。", "だんだん強く", ["だんだん弱く", "急に止まる", "同じ音を短く切る"], "クレッシェンドは音を次第に強くすることを示します。"),
+        q("tk-mu03", "music", "4分の3拍子の説明として正しいものはどれですか。", "4分音符を1拍として、1小節に3拍ある", ["3分音符を1拍として、1小節に4拍ある", "必ず3小節で終わる", "8分音符だけで演奏する"], "拍子記号の分母は1拍の音符、分子は1小節の拍数を表します。"),
+        q("tk-mu04", "music", "木管楽器の組み合わせとして適切なものはどれですか。", "フルート・クラリネット", ["トランペット・トロンボーン", "バイオリン・チェロ", "ティンパニ・シンバル"], "フルートやクラリネットは木管楽器に分類されます。"),
+        q("tk-mu05", "music", "鑑賞で児童の感じたことを音楽的な根拠につなげる視点として適切なものはどれですか。", "旋律、リズム、強弱、音色、反復や変化", ["作曲家の誕生日だけ", "楽譜の紙の色だけ", "曲名の文字数だけ"], "感じたことを、音楽を形づくっている要素と結び付けて考えます。"),
+
+        q("tk-ar01", "art", "色の三要素として正しい組み合わせはどれですか。", "色相・明度・彩度", ["速度・温度・湿度", "長さ・面積・体積", "主語・述語・修飾語"], "色相は色み、明度は明るさ、彩度は鮮やかさです。"),
+        q("tk-ar02", "art", "油絵具の特徴として適切なものはどれですか。", "乾燥に比較的時間がかかり、重ね塗りによる表現がしやすい", ["水に入れるとすぐ完全に消える", "乾く前に必ず粉になる", "紙以外には絶対に使えない"], "油絵具は乾燥がゆっくりで、厚塗りや重ね塗りの表現に向きます。"),
+        q("tk-ar03", "art", "彫刻刀を使うときの安全上の注意として正しいものはどれですか。", "刃の進む先に手を置かず、板を固定して彫る", ["刃先の前に手を置いて支える", "友達の方へ刃を向ける", "板を持ち上げたまま強く彫る"], "刃物の進行方向と手の位置を確認し、落ち着いて作業します。"),
+        q("tk-ar04", "art", "遠くのものを小さく、近くのものを大きく表すことで生まれる効果はどれですか。", "奥行きや遠近感", ["音の強弱", "重さの単位", "時間の長さ"], "重なり、位置、色の強弱も空間表現の手掛かりになります。"),
+        q("tk-ar05", "art", "鑑賞活動で大切な教師の支援として適切なものはどれですか。", "形や色、材料などを根拠に自分の見方を話せるよう促す", ["教師の感想だけを正解として覚えさせる", "価格だけで作品を評価する", "友達の見方を聞かせない"], "多様な見方を交流することで、作品のよさや面白さを捉えやすくなります。"),
+
+        q("tk-ho01", "homeEconomics", "五大栄養素として正しい組み合わせはどれですか。", "炭水化物・脂質・たんぱく質・無機質・ビタミン", ["主食・主菜・副菜・汁物・飲み物", "上着・下着・靴下・帽子・手袋", "米・小麦・水・塩・砂糖だけ"], "五大栄養素は体をつくる、動かす、調子を整える働きに関わります。"),
+        q("tk-ho02", "homeEconomics", "手縫いで、縫い目の強さを出したい部分に用いる基本的な縫い方はどれですか。", "本返し縫い", ["玉結び", "まつり縫いだけ", "しつけをしない縫い"], "本返し縫いは一針戻りながら縫うため、丈夫に縫えます。"),
+        q("tk-ho03", "homeEconomics", "洗濯表示の洗濯桶に「40」とある場合、基本的に何を示しますか。", "液温は40℃を限度として洗う", ["40分以内に乾かす", "40回だけ洗える", "40gの洗剤を必ず入れる"], "洗濯桶の中の数字は、洗濯処理で使える液温の上限を示します。"),
+        q("tk-ho04", "homeEconomics", "調理実習で包丁を安全に扱う方法として適切なものはどれですか。", "まな板を安定させ、刃先を人に向けずに扱う", ["包丁を持ったまま走る", "刃先を友達に向けて渡す", "濡れた手でふざけながら使う"], "調理器具は姿勢、置き場所、渡し方を確認して安全に扱います。"),
+        q("tk-ho05", "homeEconomics", "買物で、価格だけでなく必要性や品質、環境への影響も考えて選ぶ態度はどれですか。", "消費者として主体的に意思決定する態度", ["商品を見ずに買う態度", "契約内容を確認しない態度", "必要以上に買って捨てる態度"], "表示や情報を活用し、生活をよりよくする選択をすることが大切です。"),
+
+        q("tk-pe01", "pe", "鉄棒の逆上がりにつながる指導で、踏み切り後に意識させたい動きとして適切なものはどれですか。", "腰を鉄棒に近づけ、足を振り上げる", ["腕を伸ばして鉄棒から体を離す", "手を離して回る", "下を向いたまま止まる"], "体を鉄棒に近づけ、回転しやすい姿勢をつくることが大切です。"),
+        q("tk-pe02", "pe", "水泳のけ伸びで大切な姿勢として適切なものはどれですか。", "体をまっすぐ伸ばし、水の抵抗を小さくする", ["膝を大きく曲げ続ける", "顔を上げて足を沈める", "腕を横に広げて止まる"], "流線型の姿勢をつくると、前へ進みやすくなります。"),
+        q("tk-pe03", "pe", "暑い日の運動で熱中症を防ぐ対応として適切なものはどれですか。", "こまめな水分補給、休憩、暑さに応じた運動量の調整", ["休憩をなくし厚着する", "体調確認をしない", "水分を控えさせる"], "気温、湿度、暑さ指数、児童の体調を見て判断します。"),
+        q("tk-pe04", "pe", "マット運動の前転で、安全に回るための基本として適切なものはどれですか。", "あごを引き、後頭部ではなく背中側で丸く回る", ["頭頂部で強く止まる", "手を使わず勢いだけで回る", "横向きに倒れて回る"], "首に負担をかけず、体を丸めることが安全につながります。"),
+        q("tk-pe05", "pe", "ボール運動で、ボールを持っていない児童に必要な動きとして適切なものはどれですか。", "空いている場所へ動き、味方がパスしやすい位置に出る", ["その場で動かず待つだけ", "味方の邪魔になる場所に立つ", "ボールから目をそらし続ける"], "ボール操作だけでなく、ボールを持たないときの動きも重要です。"),
+
+        q("tk-en01", "english", "Thank you for (　) me. の空所に入る語として最も適切なものはどれですか。", "helping", ["help", "helped", "helps"], "for の後ろに動詞を置く場合は、動名詞の形にします。"),
+        q("tk-en02", "english", "This picture was painted (　) my sister. の空所に入る語として適切なものはどれですか。", "by", ["to", "at", "on"], "受け身の文で、動作をした人を表すときは by を使います。"),
+        q("tk-en03", "english", "Do you like science? に肯定で答える表現はどれですか。", "Yes, I do.", ["Yes, I am.", "Yes, I can.", "Yes, it is."], "一般動詞の疑問文 Do you ...? には Yes, I do. で答えます。"),
+        q("tk-en04", "english", "短い英文「Ken has a cat. It is black. It likes fish.」の内容として正しいものはどれですか。", "Kenの猫は黒く、魚が好きである", ["Kenは黒い魚を飼っている", "猫は白く、牛乳が好きである", "Kenは猫がきらいである"], "文中の It は cat を指し、black と likes fish が説明しています。"),
+        q("tk-en05", "english", "小学校外国語の言語活動として適切なものはどれですか。", "相手に本当に伝えたい情報をやり取りする活動", ["意味を考えずに同じ文を写すだけの活動", "日本語訳を一方的に暗記するだけの活動", "相手を意識しない発音練習だけ"], "目的、場面、相手を意識したやり取りが、表現を使う必然性を生みます。"),
+
+        q("tk-mo01", "moral", "特別の教科 道徳の授業で大切な学習として適切なものはどれですか。", "道徳的価値について多面的・多角的に考え、自己を見つめる学習", ["教師の価値観をそのまま暗記する学習", "正解を一つだけ早く答える学習", "数値の計算だけを行う学習"], "道徳科では、考え議論し、自分との関わりで考えを深めます。"),
+        q("tk-mo02", "moral", "道徳科の評価として適切なものはどれですか。", "児童の学習状況や成長の様子を記述で見取る", ["点数で順位を付ける", "行動を罰として記録するだけ", "教師の感想だけで決める"], "道徳科では数値による評定ではなく、考えの深まりなどを記述で評価します。"),
+        q("tk-mo03", "moral", "教材の登場人物の行動を扱う発問として適切なものはどれですか。", "自分ならどう考えるか、理由とともに考えさせる", ["登場人物名だけを暗記させる", "教師の答えを写させる", "理由を言わせない"], "自己を見つめるためには、自分との関わりで考える発問が有効です。"),
+        q("tk-mo04", "moral", "道徳教育と道徳科の関係として適切なものはどれですか。", "道徳教育は学校教育全体で行い、道徳科はその要となる時間である", ["道徳科だけで道徳教育を行えばよい", "学校行事とは関係しない", "教科書を読まない時間だけを指す"], "道徳教育は全教育活動を通じて行い、道徳科が計画的・発展的な指導の要になります。"),
+        q("tk-mo05", "moral", "いじめの未然防止につながる道徳科の扱いとして適切なものはどれですか。", "相手の立場や人権を考え、日常の行動に結び付けて振り返る", ["いじめの定義を読んで終える", "被害者に我慢だけを求める", "学級の出来事と切り離す"], "道徳的価値を生活と結び付け、互いを尊重する態度につなげます。"),
+
+        q("tk-in01", "inquiry", "総合的な学習の時間の探究の過程として適切な順序はどれですか。", "課題設定→情報収集→整理・分析→まとめ・表現", ["暗記→採点→順位付け→終了", "準備運動→主運動→整理運動→記録", "観察→発芽→開花→結実"], "探究では、この過程を発展的に繰り返しながら学びを深めます。"),
+        q("tk-in02", "inquiry", "総合的な学習の時間の課題として適切なものはどれですか。", "地域の防災や環境など、横断的・総合的な課題", ["漢字の書き取りだけ", "計算ドリルだけ", "楽譜の暗記だけ"], "現代的な諸課題や地域・学校の特色に応じた課題を扱います。"),
+        q("tk-in03", "inquiry", "情報収集後の整理・分析で有効な活動として適切なものはどれですか。", "集めた情報を比べたり分類したりして、関係を考える", ["資料を読まずに捨てる", "友達の意見を聞かない", "結論を最初に固定する"], "情報を構造化すると、根拠のある考えや次の問いにつながります。"),
+        q("tk-in04", "inquiry", "地域の人にインタビューする活動で大切な教師の支援はどれですか。", "目的、質問、礼儀、記録方法を事前に確認する", ["突然訪問させる", "質問を考えさせない", "記録を残させない"], "相手意識と安全、マナーを確認することで、学びの質が高まります。"),
+        q("tk-in05", "inquiry", "総合的な学習の時間の評価で重視することとして適切なものはどれですか。", "探究の過程での思考、判断、表現、主体的な取組を見取る", ["発表時間の長さだけで決める", "資料の枚数だけで決める", "教師の好みだけで決める"], "成果物だけでなく、探究の過程や振り返りを含めて評価します。"),
+
+        q("tk-ac01", "activities", "特別活動に含まれる内容として正しい組み合わせはどれですか。", "学級活動・児童会活動・クラブ活動・学校行事", ["国語・算数・理科・社会", "観察・実験・測定・記録", "音読・計算・漢字・作文"], "特別活動は集団活動を通して、よりよい生活や人間関係をつくります。"),
+        q("tk-ac02", "activities", "学級活動の話合い活動で目指す姿として適切なものはどれですか。", "互いの意見を生かし、合意形成して実践につなげる", ["多数派の意見だけを必ず採用する", "教師がすべて決める", "話し合っただけで実践しない"], "話合いは、学級生活をよりよくする実践につなげることが大切です。"),
+        q("tk-ac03", "activities", "児童会活動のねらいとして適切なものはどれですか。", "学校生活の充実と向上のために児童が協力して活動する", ["教師だけが学校行事を決める", "個人の成績を競うだけ", "教科書の音読だけを行う"], "児童の自発的・自治的な活動を通して、学校生活をよりよくします。"),
+        q("tk-ac04", "activities", "学校行事の指導で大切なこととして適切なものはどれですか。", "ねらいを明確にし、事前・当日・事後の活動を関連付ける", ["当日だけ参加させればよい", "振り返りを行わない", "安全確認を省く"], "行事は準備や振り返りを含めて、集団への所属感や実践力を育てます。"),
+        q("tk-ac05", "activities", "係活動や当番活動で教師が支援したいことはどれですか。", "児童が役割を自覚し、工夫して学級生活に貢献すること", ["失敗を責めて役割を取り上げること", "一部の児童だけに固定すること", "意味を伝えず作業だけさせること"], "役割を通して自己有用感や協力する態度を育てます。")
+      ];
+
+      var essayTopics = [
+        { id: "ict", title: "ICTを活用した個別最適な学び", hint: "ICTを手段として位置付け、児童理解・学習状況の把握・協働的な学びとの往還を意識しましょう。" },
+        { id: "deep-learning", title: "主体的・対話的で深い学び", hint: "問いをもつ場面、考えを交流する場面、学びを振り返る場面を具体化しましょう。" },
+        { id: "bullying", title: "いじめの未然防止", hint: "日常の観察と関係づくり、組織的な情報共有、児童が安心して相談できる環境を軸に考えましょう。" },
+        { id: "special-needs", title: "特別支援教育の充実", hint: "児童の困難さだけでなく強みに着目し、合理的配慮と校内外の連携を具体的に示しましょう。" },
+        { id: "class-management", title: "一人一人が安心できる学級経営", hint: "ルールの共有、自己決定の機会、互いのよさを認める集団づくりを関連付けましょう。" },
+        { id: "community", title: "保護者・地域との連携", hint: "目的と情報を丁寧に共有し、学校・家庭・地域の強みを生かす双方向の連携を考えましょう。" },
+        { id: "school-refusal", title: "不登校児童への支援", hint: "登校のみを目標にせず、児童の気持ちと学びを保障する多様なつながり方を示しましょう。" },
+        { id: "self-esteem", title: "児童の自己肯定感を高める指導", hint: "結果だけでなく過程や成長を認め、自己有用感につながる役割と振り返りを考えましょう。" },
+        { id: "moral", title: "道徳教育を生かしたよりよい人間関係づくり", hint: "多面的・多角的に考える対話と、日常生活での実践をつなげましょう。" },
+        { id: "safety", title: "児童が自ら考え行動する安全教育", hint: "知識を教えるだけでなく、身近な危険を予測し適切に判断する学習を具体化しましょう。" },
+        { id: "team-school", title: "チームとしての学校を生かした児童支援", hint: "一人で抱え込まず、記録・報告・相談を通して専門性をつなぐ姿勢を示しましょう。" },
+        { id: "inclusive", title: "多様性を尊重する教育の推進", hint: "違いを排除せず、全ての児童が参加し互いから学べる環境と具体的な手立てを考えましょう。" }
+      ];
+
+      var essayTemplates = {
+        ict: {
+          keywords: ["個別最適な学び", "学習履歴の活用", "協働的な学び", "情報モラル", "支援が必要な児童への配慮", "教師の見取り"],
+          practices: ["学習支援ソフトで理解度を把握し、補充・発展課題を選べるようにする", "共同編集や発表ツールを使い、考えを比較・共有する場を設ける", "ICT利用の約束を児童と確認し、情報モラルを日常的に指導する"],
+          stance: "ICTは目的ではなく、児童一人一人の学びを見取り、対話と深い理解につなげる手段として活用する。",
+          outcome: "児童が自分に合った方法で学び、友達と考えを広げながら主体的に課題解決へ向かう姿を目指す。"
+        },
+        "deep-learning": {
+          keywords: ["主体的な問い", "対話", "振り返り", "見方・考え方", "課題解決", "学びの自覚"],
+          practices: ["生活経験や既習事項から問いを引き出し、学習課題を児童と共有する", "ペア・グループで根拠を示して考えを交流し、考えを再構成する", "終末に学び方と分かったことを短く振り返り、次の課題につなげる"],
+          stance: "児童が自ら問いをもち、他者との対話を通して考えを深められる授業を構想する。",
+          outcome: "児童が学ぶ意味を実感し、根拠をもって考えを表現し続ける力を育てる。"
+        },
+        bullying: {
+          keywords: ["未然防止", "安心できる学級", "早期発見", "組織的対応", "相談しやすい環境", "人権感覚"],
+          practices: ["朝の観察や日記、アンケートで小さな変化を把握し、記録して共有する", "道徳や学級活動で相手の立場を考え、相談する力を育てる", "気になる情報は一人で抱えず、管理職・養護教諭等と迅速に連携する"],
+          stance: "いじめはどの学級にも起こり得るという認識に立ち、児童の安心と尊厳を最優先にする。",
+          outcome: "児童が互いを大切にし、困ったときに助けを求められる学級をつくる。"
+        },
+        "special-needs": {
+          keywords: ["児童理解", "合理的配慮", "強みへの着目", "ユニバーサルデザイン", "校内連携", "個別の支援"],
+          practices: ["座席、提示、手順カードなど環境調整を行い、見通しをもてるようにする", "できている場面を記録し、強みを生かした役割や学び方を設定する", "保護者、特別支援教育コーディネーター、関係機関と情報を共有する"],
+          stance: "困難さだけでなく強みに着目し、全ての児童が参加できる学級づくりを進める。",
+          outcome: "児童が安心して力を発揮し、互いの違いを認め合う集団を育てる。"
+        },
+        "class-management": {
+          keywords: ["安心感", "ルールの共有", "自己決定", "承認", "自治的活動", "信頼関係"],
+          practices: ["学級の約束を児童と確認し、理由と行動を具体的に共有する", "係活動や話合い活動で役割をもち、自己決定する機会を設ける", "日々の小さな成長を具体的に認め、互いのよさを伝え合う場をつくる"],
+          stance: "児童理解を基盤に、安心して挑戦できる温かな学級をつくる。",
+          outcome: "児童が自分のよさを発揮し、友達と協力して学級生活をよりよくする姿を目指す。"
+        },
+        community: {
+          keywords: ["信頼関係", "情報共有", "双方向の連携", "地域資源", "説明責任", "家庭との協力"],
+          practices: ["学級通信や面談で学習のねらいと児童の成長を具体的に伝える", "地域人材や施設を活用し、実感を伴う学習を計画する", "保護者からの相談を丁寧に受け止め、事実と方針を整理して共有する"],
+          stance: "学校だけで抱えず、家庭・地域と同じ方向を向いて児童の成長を支える。",
+          outcome: "児童が多様な人との関わりの中で学びを生活や社会へ広げることを目指す。"
+        },
+        "school-refusal": {
+          keywords: ["安心できる居場所", "児童の思い", "学びの保障", "段階的支援", "関係機関連携", "自己決定"],
+          practices: ["本人の気持ちを丁寧に聴き、登校だけを急がず安心できる関係をつくる", "別室・オンライン・家庭学習など、学びを継続できる方法を検討する", "保護者、スクールカウンセラー、関係機関と支援方針を共有する"],
+          stance: "登校の有無だけで判断せず、児童の安心と学びの継続を大切にする。",
+          outcome: "児童が自分のペースで人や学びとつながり、次の一歩を選べるよう支援する。"
+        },
+        "self-esteem": {
+          keywords: ["自己肯定感", "自己有用感", "過程の承認", "役割", "振り返り", "成功体験"],
+          practices: ["結果だけでなく努力や工夫を具体的に認め、言葉で返す", "係や当番、協働学習で友達の役に立つ経験を設定する", "振り返りで以前の自分との変化を見つけ、成長を自覚させる"],
+          stance: "児童一人一人のよさと成長を見取り、自信をもって挑戦できる環境を整える。",
+          outcome: "児童が自分を大切にし、友達のよさも認めながら前向きに学ぶ姿を育てる。"
+        },
+        moral: {
+          keywords: ["道徳的価値", "多面的・多角的", "自己を見つめる", "対話", "実生活との接続", "人間関係"],
+          practices: ["教材の登場人物の立場を複数の視点から考え、理由を交流する", "自分の生活を振り返り、これからの行動を短く言語化する", "学級生活の出来事と道徳の学びを結び付けて継続的に価値付ける"],
+          stance: "価値を押し付けるのではなく、児童が自分との関わりで考えを深められる授業を行う。",
+          outcome: "児童がよりよい人間関係を自ら考え、日常の行動に生かす姿を目指す。"
+        },
+        safety: {
+          keywords: ["危険予測", "判断力", "自助・共助", "生活場面", "避難訓練", "安全意識"],
+          practices: ["通学路や校内の危険を児童と点検し、安全な行動を考える", "災害や事故の場面を想定し、判断理由を話し合う活動を行う", "訓練後に行動を振り返り、次に生かすポイントを確認する"],
+          stance: "指示を待つだけでなく、児童が自ら危険を予測し判断できる力を育てる。",
+          outcome: "児童が自分と周囲の命を守る行動を、生活の中で選べるようにする。"
+        },
+        "team-school": {
+          keywords: ["組織的対応", "報告・連絡・相談", "記録", "専門性の活用", "役割分担", "継続支援"],
+          practices: ["気になる児童の様子を記録し、学年・管理職・養護教諭と早期に共有する", "ケース会議で支援目標と役割分担を明確にする", "支援後の変化を確認し、必要に応じて方針を見直す"],
+          stance: "担任一人で抱え込まず、学校全体の専門性をつないで児童を支える。",
+          outcome: "児童が一貫した支援を受け、安心して学校生活を送れる体制をつくる。"
+        },
+        inclusive: {
+          keywords: ["多様性", "包摂", "相互理解", "参加の保障", "偏見の防止", "協働"],
+          practices: ["教材や発問に多様な立場を取り入れ、違いを考える対話を設ける", "活動方法を複数用意し、全員が参加できる選択肢を保障する", "からかいや決めつけを見逃さず、互いを尊重する言葉を価値付ける"],
+          stance: "違いを弱さではなく学び合う資源として捉え、誰も排除されない学級をつくる。",
+          outcome: "児童が互いの違いを尊重し、共に学び生活する力を身に付けることを目指す。"
+        }
+      };
+
+      essayTopics.forEach(function (topic) {
+        var template = essayTemplates[topic.id] || {};
+        topic.keywords = template.keywords || [];
+        topic.practices = template.practices || [];
+        topic.stance = template.stance || "";
+        topic.outcome = template.outcome || "";
+      });
+
+      var defaultState = {
+        schemaVersion: 3,
+        appVersion: APP_VERSION,
+        updatedAt: null,
+        questionResults: {},
+        weakIds: [],
+        daily: {},
+        essays: {},
+        totalEssayPractices: 0
+      };
+
+      var state = loadState();
+      var ui = {
+        view: "home",
+        session: null,
+        weakFilter: "all",
+        essayTopicId: essayTopics[Math.floor(Math.random() * essayTopics.length)].id,
+        csvVisible: false
+      };
+      var toastTimer = null;
+
+      function cloneDefault() {
+        return JSON.parse(JSON.stringify(defaultState));
+      }
+
+      function loadState() {
+        try {
+          var storage = window.localStorage;
+          if (!storage) return cloneDefault();
+          var raw = storage.getItem(STORAGE_KEY);
+          if (!raw) return cloneDefault();
+          var parsed = JSON.parse(raw);
+          if (!parsed || typeof parsed !== "object") return cloneDefault();
+          var merged = cloneDefault();
+          Object.keys(merged).forEach(function (key) {
+            if (typeof parsed[key] !== "undefined") merged[key] = parsed[key];
+          });
+          if (!merged.questionResults || typeof merged.questionResults !== "object") merged.questionResults = {};
+          if (!Array.isArray(merged.weakIds)) merged.weakIds = [];
+          merged.weakIds = unique(merged.weakIds || []);
+          if (!merged.daily || typeof merged.daily !== "object") merged.daily = {};
+          if (!merged.essays || typeof merged.essays !== "object") merged.essays = {};
+          return merged;
+        } catch (error) {
+          return cloneDefault();
+        }
+      }
+
+      function saveState(showMessage) {
+        state.updatedAt = new Date().toISOString();
+        state.appVersion = APP_VERSION;
+        try {
+          var storage = window.localStorage;
+          if (!storage) throw new Error("localStorage unavailable");
+          storage.setItem(STORAGE_KEY, JSON.stringify(state));
+          if (showMessage) showToast("保存しました");
+          return true;
+        } catch (error) {
+          showToast("保存できませんでした。ブラウザの設定をご確認ください");
+          return false;
+        }
+      }
+
+      function dateKey() {
+        var now = new Date();
+        return now.getFullYear() + "-" + pad(now.getMonth() + 1) + "-" + pad(now.getDate());
+      }
+
+      function pad(number) {
+        number = String(number);
+        return number.length < 2 ? "0" + number : number;
+      }
+
+      function getToday() {
+        var key = dateKey();
+        if (!state.daily[key]) {
+          state.daily[key] = { answered: 0, essays: 0, bySubject: {} };
+        }
+        if (typeof state.daily[key].answered !== "number") state.daily[key].answered = 0;
+        if (typeof state.daily[key].essays !== "number") state.daily[key].essays = 0;
+        if (!state.daily[key].bySubject || typeof state.daily[key].bySubject !== "object") state.daily[key].bySubject = {};
+        return state.daily[key];
+      }
+
+      function subjectById(id) {
+        for (var i = 0; i < subjects.length; i += 1) {
+          if (subjects[i].id === id) return subjects[i];
+        }
+        return subjects[0];
+      }
+
+      function questionById(id) {
+        for (var i = 0; i < questions.length; i += 1) {
+          if (questions[i].id === id) return questions[i];
+        }
+        return null;
+      }
+
+      function topicById(id) {
+        for (var i = 0; i < essayTopics.length; i += 1) {
+          if (essayTopics[i].id === id) return essayTopics[i];
+        }
+        return essayTopics[0];
+      }
+
+      function shuffle(list) {
+        var result = list.slice();
+        for (var i = result.length - 1; i > 0; i -= 1) {
+          var j = Math.floor(Math.random() * (i + 1));
+          var temp = result[i];
+          result[i] = result[j];
+          result[j] = temp;
+        }
+        return result;
+      }
+
+      function escapeHtml(value) {
+        return String(value || "")
+          .replace(/&/g, "&amp;")
+          .replace(/</g, "&lt;")
+          .replace(/>/g, "&gt;")
+          .replace(/"/g, "&quot;")
+          .replace(/'/g, "&#039;");
+      }
+
+      function unique(list) {
+        return list.filter(function (item, index) {
+          return list.indexOf(item) === index;
+        });
+      }
+
+      function objectValues(object) {
+        var values = [];
+        if (!object) return values;
+        Object.keys(object).forEach(function (key) {
+          values.push(object[key]);
+        });
+        return values;
+      }
+
+      function elementMatches(element, selector) {
+        if (!element) return false;
+        var matcher = element.matches || element.webkitMatchesSelector || element.msMatchesSelector;
+        return matcher ? matcher.call(element, selector) : false;
+      }
+
+      function isCorrectStatus(status) {
+        return status === "correct" || status === "got";
+      }
+
+      function isWeakStatus(status) {
+        return status === "incorrect" || status === "review" || status === "missed" || status === "unsure";
+      }
+
+      function statusClass(status) {
+        if (status === "got") return "correct";
+        if (status === "missed") return "incorrect";
+        if (status === "unsure") return "review";
+        return status || "";
+      }
+
+      function statusLabel(status) {
+        if (status === "correct" || status === "got") return "正解";
+        if (status === "incorrect" || status === "missed") return "不正解";
+        if (status === "review" || status === "unsure") return "あとで復習";
+        return "";
+      }
+
+      function showToast(message) {
+        var toast = document.getElementById("toast");
+        if (!toast) return;
+        toast.textContent = message;
+        toast.classList.add("is-visible");
+        window.clearTimeout(toastTimer);
+        toastTimer = window.setTimeout(function () {
+          toast.classList.remove("is-visible");
+        }, 2200);
+      }
+
+      function updateHeader() {
+        var today = getToday();
+        var headerToday = document.getElementById("header-today");
+        var headerHome = document.getElementById("header-home");
+        if (headerToday) headerToday.textContent = "今日 " + today.answered + "問";
+        if (headerHome && headerHome.classList) {
+          if (ui.view !== "home") headerHome.classList.add("is-visible");
+          else headerHome.classList.remove("is-visible");
+        }
+        var navView = ui.view === "quiz" ? "subjects" : ui.view;
+        var navItems = document.querySelectorAll("[data-nav]");
+        for (var i = 0; i < navItems.length; i += 1) {
+          var item = navItems[i];
+          var active = item.getAttribute("data-nav") === navView;
+          if (item.classList) {
+            if (active) item.classList.add("is-active");
+            else item.classList.remove("is-active");
+          }
+          if (active) item.setAttribute("aria-current", "page");
+          else item.removeAttribute("aria-current");
+        }
+      }
+
+      function progressForSubject(subjectId) {
+        var list = questions.filter(function (question) { return question.subject === subjectId; });
+        var answered = list.filter(function (question) { return Boolean(state.questionResults[question.id]); }).length;
+        var correct = list.filter(function (question) {
+          return state.questionResults[question.id] && isCorrectStatus(state.questionResults[question.id].status);
+        }).length;
+        return { total: list.length, answered: answered, correct: correct };
+      }
+
+      function render() {
+        try {
+          updateHeader();
+          var main = document.getElementById("main");
+          if (!main) throw new Error("main element missing");
+          if (ui.view === "home") main.innerHTML = renderHome();
+          else if (ui.view === "subjects") main.innerHTML = renderSubjects();
+          else if (ui.view === "quiz") main.innerHTML = renderQuiz();
+          else if (ui.view === "weak") main.innerHTML = renderWeak();
+          else if (ui.view === "essay") main.innerHTML = renderEssay();
+          else if (ui.view === "records") main.innerHTML = renderRecords();
+          else main.innerHTML = renderHome();
+          window.__teacherOSAppReady = true;
+          window.__teacherOSFallbackActive = false;
+          setDebugStatus("読み込みOK: " + ui.view);
+          try {
+            window.scrollTo({ top: 0, behavior: "smooth" });
+          } catch (scrollError) {
+            window.scrollTo(0, 0);
+          }
+        } catch (error) {
+          window.__teacherOSAppReady = false;
+          renderSafeFallback(ui && ui.view ? ui.view : "home", "描画エラーを検知したため、安全表示に切り替えました。");
+        }
+      }
+
+      function renderHome() {
+        var today = getToday();
+        var weakCount = weakQuestionIds().length;
+        var goal = 20;
+        var percent = Math.min(100, Math.round(today.answered / goal * 100));
+        var drafted = Object.keys(state.essays).filter(function (id) {
+          return hasEssaySelection(state.essays[id]);
+        }).length;
+
+        return [
+          '<section class="hero" aria-labelledby="home-title">',
+            '<div>',
+              '<p class="eyebrow">Last-minute study</p>',
+              '<h1 id="home-title">あと少しを、<span>確かな力</span>に。</h1>',
+              '<p class="hero-lead">小学校全科の要点確認と、東京都の教員採用試験を意識した論文構成練習。短い時間でも迷わず、今日やるべき学習を進められます。</p>',
+              (isAppleMobile && !isStandaloneMode ? '<p class="install-hint"><span>＋</span> Safariの共有メニューから「ホーム画面に追加」すると、アプリのように使えます。</p>' : ''),
+            '</div>',
+            '<div class="hero-meter" aria-label="今日の学習目標の進捗">',
+              '<div class="hero-meter-label">今日の演習</div>',
+              '<div class="hero-meter-value">' + today.answered + '<small>/ ' + goal + '問</small></div>',
+              '<div class="meter-track"><span style="width:' + percent + '%"></span></div>',
+              '<p class="meter-note">' + (today.answered >= goal ? '今日の目標を達成しました。積み重ねが力になります。' : 'まずは5問。タップで即確認しましょう。') + '</p>',
+            '</div>',
+          '</section>',
+          '<div class="section-heading">',
+            '<div><h2>学習メニュー</h2><p>取り組みたいモードを選んでください</p></div>',
+          '</div>',
+          '<section class="mode-grid" aria-label="学習メニュー">',
+            modeCard("subjects", "all", "全", "小学校全科モード", "13教科・全65問。大きな選択肢をタップして、すぐ正誤と解説を確認します。", questions.length + "問収録"),
+            modeCard("weak", "weak", "弱", "苦手問題モード", "不正解と「あとで復習」にした問題を優先して、短時間で回します。", weakCount + "問を復習"),
+            modeCard("essay", "essay", "論", "論文練習モード", "テーマ、キーワード、実践例を選ぶだけで、論文構成メモを作ります。", drafted + "テーマ保存"),
+            modeCard("records", "records", "録", "学習記録", "今日の演習量、教科別の習得状況、苦手問題と論文練習の回数を確認します。", "論文 " + (state.totalEssayPractices || 0) + "回"),
+          '</section>'
+        ].join("");
+      }
+
+      function modeCard(action, className, symbol, title, description, meta) {
+        return [
+          '<button class="mode-card ' + className + '" type="button" data-action="' + action + '">',
+            '<span class="mode-icon">' + symbol + '</span>',
+            '<span><span class="mode-title">' + title + '</span><span class="mode-description">' + description + '</span></span>',
+            '<span class="chevron" aria-hidden="true">›</span>',
+            '<span class="mode-meta">' + meta + '</span>',
+          '</button>'
+        ].join("");
+      }
+
+      function pageHead(title, description, backAction) {
+        return [
+          '<div class="page-head">',
+            '<button class="back-button" type="button" data-action="' + backAction + '" aria-label="前の画面に戻る">←</button>',
+            '<div><h1>' + title + '</h1><p>' + description + '</p></div>',
+          '</div>'
+        ].join("");
+      }
+
+      function renderSubjects() {
+        var cards = subjects.map(function (subject) {
+          var progress = progressForSubject(subject.id);
+          var percent = Math.round(progress.answered / progress.total * 100);
+          return [
+            '<button class="subject-card" type="button" data-action="start-subject" data-subject="' + subject.id + '">',
+              '<span class="subject-top">',
+                '<span class="subject-symbol">' + subject.symbol + '</span>',
+                '<span class="subject-count">' + progress.answered + ' / ' + progress.total + '問</span>',
+              '</span>',
+              '<span class="subject-name">' + subject.name + '</span>',
+              '<span class="thin-track" aria-label="' + subject.name + 'の回答進捗 ' + percent + '%"><span style="width:' + percent + '%"></span></span>',
+            '</button>'
+          ].join("");
+        }).join("");
+        return pageHead("小学校全科モード", "教科別は5問ずつ。ランダムは全教科から10問を出題します。", "home") +
+          '<div class="subject-actions">' +
+            '<button class="btn btn-primary" type="button" data-action="start-random">全教科ランダム10問</button>' +
+            '<button class="btn btn-secondary" type="button" data-action="records">CSV出力を見る</button>' +
+          '</div>' +
+          '<section class="subject-grid" aria-label="教科一覧">' + cards + '</section>';
+      }
+
+      function startSession(mode, questionList, subjectId, limit) {
+        var ids = questionList.map(function (question) { return question.id; });
+        ids = mode === "weak" ? ids.slice() : shuffle(ids);
+        if (limit && ids.length > limit) ids = ids.slice(0, limit);
+        var choiceOrders = {};
+        ids.forEach(function (id) {
+          var question = questionById(id);
+          if (question) {
+            choiceOrders[id] = shuffle(question.choices.map(function (_, index) { return index; }));
+          }
+        });
+        ui.session = {
+          mode: mode,
+          subject: subjectId || "all",
+          queue: ids,
+          index: 0,
+          selectedChoice: null,
+          result: null,
+          choiceOrders: choiceOrders
+        };
+      }
+
+      function renderQuiz() {
+        var session = ui.session;
+        if (!session || session.index >= session.queue.length) return renderCompletion();
+        var question = questionById(session.queue[session.index]);
+        if (!question) return renderCompletion();
+        return pageHead(subjectById(question.subject).name, "選択肢をタップすると、すぐ正誤と解説を表示します。", "subjects") +
+          '<div class="quiz-layout">' + renderQuestionCard(question, session.index + 1, session.queue.length, false) + '</div>';
+      }
+
+      function weakQuestionIds() {
+        var ids = state.weakIds.slice();
+        Object.keys(state.questionResults || {}).forEach(function (id) {
+          var result = state.questionResults[id];
+          if (result && (isWeakStatus(result.status) || result.review)) ids.push(id);
+        });
+        return unique(ids).filter(function (id) { return Boolean(questionById(id)); });
+      }
+
+      function weakPriority(question) {
+        var result = state.questionResults[question.id];
+        var status = result && result.status;
+        if (status === "incorrect" || status === "missed") return 0;
+        if (status === "review" || status === "unsure" || (result && result.review)) return 1;
+        return 2;
+      }
+
+      function renderWeak() {
+        var options = '<option value="all">すべての教科</option>' + subjects.map(function (subject) {
+          var count = weakQuestionIds().filter(function (id) {
+            var question = questionById(id);
+            return question && question.subject === subject.id;
+          }).length;
+          return '<option value="' + subject.id + '"' + (ui.weakFilter === subject.id ? ' selected' : '') + '>' + subject.name + '（' + count + '）</option>';
+        }).join("");
+
+        var filter = [
+          '<div class="filter-bar">',
+            '<label for="weak-filter">出題する教科</label>',
+            '<select id="weak-filter" data-action="weak-filter">' + options + '</select>',
+          '</div>'
+        ].join("");
+
+        var available = weakQuestionIds().map(questionById).filter(Boolean).filter(function (question) {
+          return ui.weakFilter === "all" || question.subject === ui.weakFilter;
+        }).sort(function (a, b) {
+          return weakPriority(a) - weakPriority(b);
+        });
+
+        var answeredQuestion = null;
+        if (ui.session && ui.session.mode === "weak" && ui.session.result) {
+          answeredQuestion = questionById(ui.session.queue[ui.session.index]);
+        }
+
+        if (!available.length && !answeredQuestion) {
+          return pageHead("苦手問題モード", "不正解と「あとで復習」にした問題を集中して復習します。", "home") +
+            filter +
+            '<section class="empty-state"><div class="empty-icon">✓</div><h2>復習する問題はありません</h2><p>' +
+            (ui.weakFilter === "all" ? '苦手問題が登録されると、ここに表示されます。全科モードから問題に取り組んでみましょう。' : 'この教科の苦手問題はありません。別の教科を選ぶか、全科モードに挑戦しましょう。') +
+            '</p><button class="btn btn-blue" type="button" data-action="subjects">全科モードへ</button></section>';
+        }
+
+        if (!ui.session || ui.session.mode !== "weak" || ui.session.subject !== ui.weakFilter) {
+          startSession("weak", available, ui.weakFilter);
+        }
+        if (!ui.session.result) {
+          var validIds = available.map(function (question) { return question.id; });
+          ui.session.queue = ui.session.queue.filter(function (id) { return validIds.indexOf(id) !== -1; });
+          validIds.forEach(function (id) {
+            if (ui.session.queue.indexOf(id) === -1) ui.session.queue.push(id);
+            if (!ui.session.choiceOrders[id]) {
+              var item = questionById(id);
+              if (item) ui.session.choiceOrders[id] = shuffle(item.choices.map(function (_, index) { return index; }));
+            }
+          });
+          if (ui.session.index >= ui.session.queue.length) ui.session.index = 0;
+        }
+
+        var current = questionById(ui.session.queue[ui.session.index]);
+        if (!current) return renderCompletion();
+        return pageHead("苦手問題モード", "正解すると復習リストから外れます。迷う問題はもう一度「あとで復習」にできます。", "home") +
+          filter +
+          '<div class="quiz-layout">' + renderQuestionCard(current, ui.session.index + 1, ui.session.queue.length, true) + '</div>';
+      }
+
+      function renderQuestionCard(question, position, total, weakMode) {
+        var session = ui.session;
+        var previous = state.questionResults[question.id];
+        var previousLabel = previous ? statusLabel(previous.status) : "";
+        if (previous && state.weakIds.indexOf(question.id) !== -1 && isCorrectStatus(previous.status)) previousLabel += "・復習";
+        var previousBadge = previous ? '<span class="status-badge ' + statusClass(previous.status) + '">前回：' + previousLabel + '</span>' : '<span class="status-badge">初回</span>';
+        var order = session.choiceOrders && session.choiceOrders[question.id];
+        if (!order) {
+          order = shuffle(question.choices.map(function (_, index) { return index; }));
+          if (!session.choiceOrders) session.choiceOrders = {};
+          session.choiceOrders[question.id] = order;
+        }
+        var answered = session.selectedChoice !== null && typeof session.selectedChoice !== "undefined";
+        var choices = '<div class="choice-list" role="list">' + order.map(function (choiceIndex, displayIndex) {
+          var isCorrect = choiceIndex === question.correctIndex;
+          var isSelected = choiceIndex === session.selectedChoice;
+          var classes = ["choice-button"];
+          if (answered && isCorrect) classes.push("is-correct");
+          if (answered && isSelected && !isCorrect) classes.push("is-wrong");
+          if (!answered && isSelected) classes.push("is-selected");
+          return [
+            '<button class="' + classes.join(" ") + '" type="button" data-action="choose-answer" data-choice="' + choiceIndex + '"' + (answered ? ' disabled' : '') + '>',
+              '<span class="choice-marker">' + String.fromCharCode(65 + displayIndex) + '</span>',
+              '<span>' + escapeHtml(question.choices[choiceIndex]) + '</span>',
+            '</button>'
+          ].join("");
+        }).join("") + '</div>';
+
+        var feedback = "";
+        if (answered) {
+          var correct = session.result === "correct";
+          feedback = [
+            '<div class="feedback-panel ' + (correct ? 'is-correct' : 'is-incorrect') + '" id="answer-panel">',
+              '<p class="feedback-title">' + (correct ? '✓ 正解です' : '✕ 不正解です') + '</p>',
+              '<p class="feedback-answer">正解：' + escapeHtml(question.answer) + '</p>',
+              '<p class="explanation"><strong>ポイント：</strong>' + escapeHtml(question.explanation) + '</p>',
+            '</div>'
+          ].join("");
+        }
+
+        var actions;
+        if (!answered) {
+          actions = '<p class="grading-hint">選択肢をタップしてください。解答は自動で記録されます。</p>';
+        } else {
+          var inReview = state.weakIds.indexOf(question.id) !== -1;
+          var resultMessage = session.result === "correct"
+            ? (inReview ? "正解です。必要なら復習対象に残せます。" : "正解として記録しました。")
+            : "不正解として記録し、苦手問題に保存しました。";
+          actions = '<div class="result-banner">' + resultMessage + '</div>' +
+            '<button class="btn btn-secondary" type="button" data-action="mark-review">' + (inReview ? "復習対象に保存済み" : "あとで復習") + '</button>' +
+            '<button class="btn btn-blue" type="button" data-action="next-question">' +
+            (session.index + 1 >= session.queue.length ? "結果を見る" : "次の問題") + '</button>';
+        }
+
+        var percent = Math.round(position / total * 100);
+        return [
+          '<div class="quiz-status"><span>' + position + ' / ' + total + ' 問</span><span>' + percent + '%</span></div>',
+          '<div class="thin-track" style="margin-bottom:16px"><span style="width:' + percent + '%"></span></div>',
+          '<article class="quiz-card">',
+            '<div class="quiz-card-head"><span class="subject-badge">' + subjectById(question.subject).name + '</span>' + previousBadge + '</div>',
+            '<div class="question-area">',
+              '<div class="question-label">QUESTION</div>',
+              '<p class="question-text">' + escapeHtml(question.question) + '</p>',
+              choices,
+              feedback,
+            '</div>',
+            '<div class="quiz-actions">' + actions + '</div>',
+          '</article>'
+        ].join("");
+      }
+
+      function renderCompletion() {
+        var session = ui.session;
+        var total = session ? session.queue.length : 0;
+        var nextAction = session && session.mode === "weak" ? "weak" : "subjects";
+        return pageHead("演習完了", "おつかれさまでした。記録は自動で保存されています。", "home") +
+          '<section class="completion-card"><div class="empty-icon">✓</div><h2>' + total + '問、確認できました</h2><p>不正解と「あとで復習」にした問題は苦手問題モードに保存されています。時間を空けてもう一度タップ練習しましょう。</p><button class="btn btn-blue" type="button" data-action="' + nextAction + '">続けて学習する</button></section>';
+      }
+
+      function recordAnswer(question, isCorrect, selectedChoice) {
+        var previous = state.questionResults[question.id] || { attempts: 0, correctCount: 0, gotCount: 0 };
+        var status = isCorrect ? "correct" : "incorrect";
+        state.questionResults[question.id] = {
+          status: status,
+          attempts: (previous.attempts || 0) + 1,
+          correctCount: (previous.correctCount || previous.gotCount || 0) + (isCorrect ? 1 : 0),
+          gotCount: (previous.gotCount || 0) + (isCorrect ? 1 : 0),
+          selectedChoice: selectedChoice,
+          review: false,
+          lastAnsweredAt: new Date().toISOString()
+        };
+
+        var weakIndex = state.weakIds.indexOf(question.id);
+        if (isCorrect && weakIndex !== -1) state.weakIds.splice(weakIndex, 1);
+        if (!isCorrect && weakIndex === -1) state.weakIds.push(question.id);
+
+        var today = getToday();
+        today.answered += 1;
+        if (!today.bySubject[question.subject]) {
+          today.bySubject[question.subject] = { answered: 0, correct: 0, incorrect: 0, got: 0, missed: 0 };
+        }
+        today.bySubject[question.subject].answered += 1;
+        today.bySubject[question.subject][isCorrect ? "correct" : "incorrect"] = (today.bySubject[question.subject][isCorrect ? "correct" : "incorrect"] || 0) + 1;
+        today.bySubject[question.subject][isCorrect ? "got" : "missed"] = (today.bySubject[question.subject][isCorrect ? "got" : "missed"] || 0) + 1;
+        state.weakIds = unique(state.weakIds);
+        saveState(false);
+      }
+
+      function markForReview(question) {
+        var previous = state.questionResults[question.id] || { attempts: 0, correctCount: 0 };
+        state.questionResults[question.id] = {
+          status: previous.status || "review",
+          attempts: previous.attempts || 0,
+          correctCount: previous.correctCount || previous.gotCount || 0,
+          gotCount: previous.gotCount || 0,
+          selectedChoice: previous.selectedChoice,
+          lastAnsweredAt: previous.lastAnsweredAt || null,
+          review: true,
+          markedForReviewAt: new Date().toISOString()
+        };
+        if (state.weakIds.indexOf(question.id) === -1) state.weakIds.push(question.id);
+        state.weakIds = unique(state.weakIds);
+        saveState(false);
+      }
+
+      function ensureEssayDraft(topicId) {
+        if (!state.essays[topicId]) {
+          state.essays[topicId] = {
+            selections: { keywords: [], practices: [] },
+            updatedAt: null,
+            practiceCount: 0,
+            lastPracticedAt: null
+          };
+        }
+        var draft = state.essays[topicId];
+        if (!draft.selections) draft.selections = { keywords: [], practices: [] };
+        if (!Array.isArray(draft.selections.keywords)) draft.selections.keywords = [];
+        if (!Array.isArray(draft.selections.practices)) draft.selections.practices = [];
+        return draft;
+      }
+
+      function hasEssaySelection(draft) {
+        if (!draft) return false;
+        if (draft.selections) {
+          return Boolean((draft.selections.keywords && draft.selections.keywords.length) || (draft.selections.practices && draft.selections.practices.length));
+        }
+        if (draft.fields) {
+          return objectValues(draft.fields).some(function (value) { return String(value || "").trim(); });
+        }
+        return false;
+      }
+
+      function renderEssay() {
+        var topic = topicById(ui.essayTopicId);
+        var draft = ensureEssayDraft(topic.id);
+        var topicOptions = essayTopics.map(function (item) {
+          return '<option value="' + item.id + '"' + (item.id === topic.id ? ' selected' : '') + '>' + escapeHtml(item.title) + '</option>';
+        }).join("");
+        var memo = buildEssayMemo(topic, draft);
+
+        return pageHead("論文練習モード", "テーマ・キーワード・実践例をタップして、論文構成を短時間で確認します。", "home") +
+          '<div class="essay-layout">' +
+            '<section class="essay-main">' +
+              '<div class="essay-topic">' +
+                '<div class="essay-topic-top"><span class="subject-badge">今回のテーマ</span><button class="text-button" type="button" data-action="random-topic">別のテーマを出す</button></div>' +
+                '<h2>' + escapeHtml(topic.title) + '</h2><p>' + escapeHtml(topic.hint) + '</p>' +
+                '<select class="topic-select" data-action="essay-topic-select" aria-label="論文テーマを選ぶ">' + topicOptions + '</select>' +
+              '</div>' +
+              '<div class="essay-fields">' +
+                essayOptionGroup("keywords", "1. 使うキーワードを選ぶ", "答案に入れたい教育用語を2〜3個選ぶと、論点がぶれにくくなります。", topic.keywords, draft.selections.keywords) +
+                essayOptionGroup("practices", "2. 具体的な実践例を選ぶ", "本番で書きやすい実践を1〜2個選びます。選んだ内容が下のメモに入ります。", topic.practices, draft.selections.practices) +
+                '<div class="memo-card" aria-label="自動生成された論文構成メモ">' +
+                  '<h3>3. 自動で組み上がる構成メモ</h3>' +
+                  '<ol class="memo-list">' + memo.map(function (item, index) {
+                    return '<li><span class="memo-num">' + (index + 1) + '</span><span><strong>' + escapeHtml(item.title) + '</strong><br>' + escapeHtml(item.body) + '</span></li>';
+                  }).join("") + '</ol>' +
+                '</div>' +
+                '<div class="essay-footer"><span class="save-status" id="save-status">● タップで自動保存</span><button class="btn btn-primary" type="button" data-action="record-essay">この構成メモを記録</button></div>' +
+              '</div>' +
+            '</section>' +
+            '<aside class="essay-guide" aria-label="論文の型">' +
+              '<div class="guide-head"><p>WRITING FRAME</p><h2>論文の型</h2></div>' +
+              '<ol class="guide-steps">' +
+                '<li><span class="step-num">1</span><span>教育課題を明確にする</span></li>' +
+                '<li><span class="step-num">2</span><span>教師としての基本姿勢を書く</span></li>' +
+                '<li><span class="step-num">3</span><span>具体的な実践を2つ書く</span></li>' +
+                '<li><span class="step-num">4</span><span>児童の成長につなげてまとめる</span></li>' +
+              '</ol>' +
+            '</aside>' +
+          '</div>';
+      }
+
+      function essayOptionGroup(kind, title, description, options, selected) {
+        return [
+          '<div class="template-section">',
+            '<h3>' + escapeHtml(title) + '</h3>',
+            '<p>' + escapeHtml(description) + '</p>',
+            '<div class="option-chips">' + options.map(function (value) {
+              var active = selected.indexOf(value) !== -1;
+              return '<button class="essay-chip' + (active ? ' is-selected' : '') + '" type="button" data-action="essay-toggle" data-kind="' + kind + '" data-value="' + escapeHtml(value) + '">' + (active ? '✓ ' : '') + escapeHtml(value) + '</button>';
+            }).join("") + '</div>',
+          '</div>'
+        ].join("");
+      }
+
+      function buildEssayMemo(topic, draft) {
+        var keywords = draft.selections.keywords.length ? draft.selections.keywords.join("、") : "選択したキーワード";
+        var practices = draft.selections.practices.length ? draft.selections.practices : ["実践例を1つ選択", "必要に応じてもう1つ選択"];
+        var firstPractice = practices[0];
+        var secondPractice = practices[1] || "もう1つの実践例を選択して具体化する";
+        return [
+          {
+            title: "課題・背景",
+            body: topic.title + "は、" + keywords + "の視点から、全ての児童の学びと安心を保障するために重要な教育課題である。"
+          },
+          {
+            title: "教師としての方針",
+            body: topic.stance || "児童理解を基盤に、組織的・継続的に指導を進める。"
+          },
+          {
+            title: "具体的な実践",
+            body: "第一に、" + firstPractice + "。第二に、" + secondPractice + "。"
+          },
+          {
+            title: "まとめ",
+            body: topic.outcome || "児童一人一人の成長につながるよう、実践を振り返りながら改善を続ける。"
+          }
+        ];
+      }
+
+      function toggleEssaySelection(kind, value) {
+        var draft = ensureEssayDraft(ui.essayTopicId);
+        var list = draft.selections[kind];
+        var index = list.indexOf(value);
+        if (index === -1) list.push(value);
+        else list.splice(index, 1);
+        draft.updatedAt = new Date().toISOString();
+        saveState(false);
+      }
+
+      function csvEscape(value) {
+        value = String(value || "");
+        if (value.search(/[",\n\r]/) !== -1) return '"' + value.replace(/"/g, '""') + '"';
+        return value;
+      }
+
+      function csvChoiceIndexes(question, questionIndex) {
+        var indexes = [0, 1, 2, 3];
+        var shift = questionIndex % indexes.length;
+        return indexes.slice(shift).concat(indexes.slice(0, shift)).filter(function (index) {
+          return index < question.choices.length;
+        });
+      }
+
+      function answerLetterFor(indexes, correctIndex) {
+        var letters = ["A", "B", "C", "D"];
+        for (var i = 0; i < indexes.length; i += 1) {
+          if (indexes[i] === correctIndex) return letters[i];
+        }
+        return "A";
+      }
+
+      function buildQuestionsCsv() {
+        var rows = [["教科", "問題", "選択肢A", "選択肢B", "選択肢C", "選択肢D", "正解", "解説"].map(csvEscape).join(",")];
+        questions.forEach(function (question, index) {
+          var indexes = csvChoiceIndexes(question, index);
+          var row = [
+            subjectById(question.subject).name,
+            question.question,
+            question.choices[indexes[0]] || "",
+            question.choices[indexes[1]] || "",
+            question.choices[indexes[2]] || "",
+            question.choices[indexes[3]] || "",
+            answerLetterFor(indexes, question.correctIndex),
+            question.explanation
+          ];
+          rows.push(row.map(csvEscape).join(","));
+        });
+        return rows.join("\n");
+      }
+
+      function showCsvPanel(message) {
+        ui.csvVisible = true;
+        ui.view = "records";
+        render();
+        showToast(message || "CSVを表示しました");
+      }
+
+      function copyQuestionsCsv() {
+        var csv = buildQuestionsCsv();
+        if (window.navigator && window.navigator.clipboard && window.navigator.clipboard.writeText) {
+          window.navigator.clipboard.writeText(csv).then(function () {
+            showToast("CSVをコピーしました");
+          }).catch(function () {
+            showCsvPanel("CSVを表示しました。長押しでコピーできます");
+          });
+        } else {
+          showCsvPanel("CSVを表示しました。長押しでコピーできます");
+        }
+      }
+
+      function downloadQuestionsCsv() {
+        try {
+          var csv = "\ufeff" + buildQuestionsCsv();
+          var blob = new Blob([csv], { type: "text/csv;charset=utf-8" });
+          var url = window.URL.createObjectURL(blob);
+          var link = document.createElement("a");
+          link.href = url;
+          link.download = "teacheros_exam_cram_questions.csv";
+          document.body.appendChild(link);
+          link.click();
+          window.setTimeout(function () {
+            document.body.removeChild(link);
+            window.URL.revokeObjectURL(url);
+          }, 0);
+          showToast("CSVをダウンロードします");
+        } catch (error) {
+          showCsvPanel("CSVを表示しました。コピーして保存してください");
+        }
+      }
+
+      function renderRecords() {
+        var today = getToday();
+        var todayCorrect = objectValues(today.bySubject).reduce(function (sum, item) { return sum + (item.correct || item.got || 0); }, 0);
+        var todayRate = today.answered ? Math.round(todayCorrect / today.answered * 100) : 0;
+        var rows = subjects.map(function (subject) {
+          var progress = progressForSubject(subject.id);
+          var rate = progress.answered ? Math.round(progress.correct / progress.answered * 100) : 0;
+          return [
+            '<div class="record-row">',
+              '<div class="record-subject">' + subject.name + '</div>',
+              '<div class="record-track" aria-label="' + subject.name + 'の正解率 ' + rate + '%"><span style="width:' + rate + '%"></span></div>',
+              '<div class="record-numbers"><strong>' + progress.correct + '問正解</strong> / ' + progress.answered + '問回答</div>',
+            '</div>'
+          ].join("");
+        }).join("");
+        var csvPanelClass = ui.csvVisible ? "csv-panel is-visible" : "csv-panel";
+        var csvText = ui.csvVisible ? escapeHtml(buildQuestionsCsv()) : "";
+
+        return pageHead("学習記録", "積み重ねと現在地を確認し、次に取り組む内容を決めましょう。", "home") +
+          '<section class="stats-grid" aria-label="学習状況の概要">' +
+            statCard("問", today.answered, "問", "今日解いた問題") +
+            statCard("率", todayRate, "%", "今日の正解率") +
+            statCard("弱", weakQuestionIds().length, "問", "苦手・復習") +
+            statCard("論", state.totalEssayPractices || 0, "回", "論文練習") +
+          '</section>' +
+          '<section class="record-card">' +
+            '<div class="record-card-head"><div><h2>教科別の正答状況</h2><p>各問題の最新の正解・不正解を集計しています</p></div><span class="subject-badge">全' + questions.length + '問</span></div>' +
+            '<div class="record-list">' + rows + '</div>' +
+            '<p class="record-note">「正解率」は、一度でも回答した問題のうち、最新の記録が正解の割合です。「あとで復習」にしても、直近の正誤記録は保持されます。</p>' +
+          '</section>' +
+          '<section class="record-card" aria-label="CSV出力">' +
+            '<div class="record-card-head"><div><h2>問題CSV出力</h2><p>教科,問題,選択肢A,選択肢B,選択肢C,選択肢D,正解,解説 の形式で出力します</p></div><span class="subject-badge">CSV</span></div>' +
+            '<div class="csv-actions">' +
+              '<button class="btn btn-primary" type="button" data-action="download-csv">CSVをダウンロード</button>' +
+              '<button class="btn btn-secondary" type="button" data-action="copy-csv">CSVをコピー</button>' +
+              '<button class="btn btn-blue btn-wide" type="button" data-action="show-csv">' + (ui.csvVisible ? "CSV表示を閉じる" : "CSVを画面に表示") + '</button>' +
+            '</div>' +
+            '<div class="' + csvPanelClass + '">' +
+              '<label for="csv-output">CSVプレビュー</label>' +
+              '<textarea id="csv-output" readonly>' + csvText + '</textarea>' +
+            '</div>' +
+          '</section>';
+      }
+
+      function statCard(symbol, value, unit, label) {
+        return '<div class="stat-card"><div class="stat-icon">' + symbol + '</div><div class="stat-value">' + value + '<small>' + unit + '</small></div><div class="stat-label">' + label + '</div></div>';
+      }
+
+      function go(view) {
+        ui.view = view;
+        if (view !== "quiz" && view !== "weak") ui.session = null;
+        render();
+        var main = document.getElementById("main");
+        if (main && main.focus) {
+          try {
+            main.focus({ preventScroll: true });
+          } catch (error) {
+            main.focus();
+          }
+        }
+      }
+
+      document.addEventListener("click", function (event) {
+        var button = findActionElement(event.target);
+        if (!button) return;
+        var action = button.getAttribute("data-action");
+
+        if (action === "home") go("home");
+        else if (action === "subjects") go("subjects");
+        else if (action === "weak") {
+          ui.view = "weak";
+          ui.session = null;
+          render();
+          var weakMain = document.getElementById("main");
+          if (weakMain && weakMain.focus) {
+            try {
+              weakMain.focus({ preventScroll: true });
+            } catch (error) {
+              weakMain.focus();
+            }
+          }
+        }
+        else if (action === "essay") go("essay");
+        else if (action === "records") go("records");
+        else if (action === "show-csv") {
+          ui.csvVisible = !ui.csvVisible;
+          ui.view = "records";
+          render();
+        }
+        else if (action === "copy-csv") {
+          copyQuestionsCsv();
+        }
+        else if (action === "download-csv") {
+          downloadQuestionsCsv();
+        }
+        else if (action === "start-subject") {
+          var subjectId = button.getAttribute("data-subject");
+          startSession("all", questions.filter(function (question) { return question.subject === subjectId; }), subjectId);
+          ui.view = "quiz";
+          render();
+        }
+        else if (action === "start-random") {
+          startSession("random", questions, "all", 10);
+          ui.view = "quiz";
+          render();
+        }
+        else if (action === "choose-answer" && ui.session && ui.session.selectedChoice === null) {
+          var question = questionById(ui.session.queue[ui.session.index]);
+          var choiceIndex = Number(button.getAttribute("data-choice"));
+          if (question && !isNaN(choiceIndex)) {
+            var correct = choiceIndex === question.correctIndex;
+            recordAnswer(question, correct, choiceIndex);
+            ui.session.selectedChoice = choiceIndex;
+            ui.session.result = correct ? "correct" : "incorrect";
+            render();
+            var answerPanel = document.getElementById("answer-panel");
+            if (answerPanel && answerPanel.scrollIntoView) {
+              try {
+                answerPanel.scrollIntoView({ behavior: "smooth", block: "nearest" });
+              } catch (error) {
+                answerPanel.scrollIntoView();
+              }
+            }
+          }
+        }
+        else if (action === "mark-review" && ui.session) {
+          var reviewQuestion = questionById(ui.session.queue[ui.session.index]);
+          if (reviewQuestion) {
+            markForReview(reviewQuestion);
+            render();
+            showToast("あとで復習に保存しました");
+          }
+        }
+        else if (action === "next-question" && ui.session) {
+          ui.session.index += 1;
+          ui.session.selectedChoice = null;
+          ui.session.result = null;
+          render();
+        }
+        else if (action === "random-topic") {
+          var otherTopics = essayTopics.filter(function (topic) { return topic.id !== ui.essayTopicId; });
+          ui.essayTopicId = otherTopics[Math.floor(Math.random() * otherTopics.length)].id;
+          render();
+        }
+        else if (action === "record-essay") {
+          var draft = ensureEssayDraft(ui.essayTopicId);
+          if (!hasEssaySelection(draft)) {
+            showToast("キーワードか実践例を1つ選びましょう");
+            return;
+          }
+          draft.practiceCount = (draft.practiceCount || 0) + 1;
+          draft.lastPracticedAt = new Date().toISOString();
+          state.totalEssayPractices = (state.totalEssayPractices || 0) + 1;
+          getToday().essays += 1;
+          saveState(false);
+          updateHeader();
+          showToast("論文練習を1回として記録しました");
+        }
+        else if (action === "essay-toggle") {
+          var kind = button.getAttribute("data-kind");
+          var value = button.getAttribute("data-value");
+          if ((kind === "keywords" || kind === "practices") && value) {
+            toggleEssaySelection(kind, value);
+            render();
+          }
+        }
+      });
+
+      document.addEventListener("change", function (event) {
+        if (!event.target || !event.target.getAttribute) return;
+        var action = event.target.getAttribute("data-action");
+        if (action === "weak-filter") {
+          ui.weakFilter = event.target.value;
+          ui.session = null;
+          render();
+        }
+        if (action === "essay-topic-select" && event.target.value) {
+          ui.essayTopicId = event.target.value;
+          render();
+        }
+      });
+
+      window.addEventListener("pagehide", function () {
+        saveState(false);
+      });
+
+      document.addEventListener("visibilitychange", function () {
+        if (document.visibilityState === "hidden") saveState(false);
+      });
+
+      document.addEventListener("focusin", function (event) {
+        if (elementMatches(event.target, "textarea, select") && document.body.classList) document.body.classList.add("keyboard-active");
+      });
+
+      document.addEventListener("focusout", function (event) {
+        if (!elementMatches(event.target, "textarea, select")) return;
+        window.setTimeout(function () {
+          if ((!document.activeElement || !elementMatches(document.activeElement, "textarea, select")) && document.body.classList) {
+            document.body.classList.remove("keyboard-active");
+          }
+        }, 80);
+      });
+
+      function bootApp() {
+        try {
+          render();
+        } catch (error) {
+          window.__teacherOSAppReady = false;
+          renderSafeFallback("home", "起動エラーを検知したため、安全表示で起動しました。");
+        }
+      }
+
+      if (document.readyState === "loading") {
+        document.addEventListener("DOMContentLoaded", bootApp, false);
+      } else {
+        bootApp();
+      }
+    }());
+  </script>
+</body>
+</html>
